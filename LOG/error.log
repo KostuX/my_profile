@@ -1,0 +1,38 @@
+[ERROR] Tue, 14 May 2024 23:05:34 GMT - error: duplicate key value violates unique constraint "unique_column1_column2"
+[ERROR] Tue, 14 May 2024 23:05:51 GMT - Test Log
+[ERROR] Tue, 14 May 2024 23:05:53 GMT - Test Log
+[ERROR] Tue, 14 May 2024 23:05:54 GMT - Test Log
+[ERROR] Tue, 14 May 2024 23:05:58 GMT - error: duplicate key value violates unique constraint "unique_column1_column2"
+[ERROR] Tue, 14 May 2024 23:39:39 GMT - Test Log
+[ERROR] Tue, 14 May 2024 23:39:44 GMT - error: duplicate key value violates unique constraint "unique_column1_column2"
+[ERROR] Tue, 14 May 2024 23:57:56 GMT - Error: FC460000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+[ERROR] Wed, 15 May 2024 00:00:38 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-41f87d20488sm245448995e9.25 - gsmtp
+[ERROR] Wed, 15 May 2024 00:01:22 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-41f88110f3esm246296155e9.29 - gsmtp
+[ERROR] Wed, 15 May 2024 00:02:10 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-41fccee962esm209317265e9.31 - gsmtp
+[ERROR] Wed, 15 May 2024 00:02:15 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-41fccce2449sm212254925e9.16 - gsmtp
+[ERROR] Wed, 15 May 2024 08:19:45 GMT - Test Log
+[ERROR] Wed, 15 May 2024 08:19:45 GMT - Test Log
+[ERROR] Wed, 15 May 2024 08:19:48 GMT - Test Log
+[ERROR] Wed, 15 May 2024 08:20:02 GMT - error: duplicate key value violates unique constraint "unique_column1_column2"
+[ERROR] Wed, 15 May 2024 21:10:10 GMT - Test Log
+[ERROR] Wed, 15 May 2024 21:31:11 GMT - Test Log
+[ERROR] Wed, 15 May 2024 21:31:12 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 21:31:12 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 21:31:35 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-351b4af0b0asm10739309f8f.100 - gsmtp
+[ERROR] Wed, 15 May 2024 21:58:37 GMT - Test Log
+[ERROR] Wed, 15 May 2024 21:58:39 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 21:58:39 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 21:59:35 GMT - Error: Connection terminated unexpectedly[ERROR] Wed, 15 May 2024 21:59:35 GMT - Error: Connection terminated unexpectedly
+
+[ERROR] Wed, 15 May 2024 22:00:21 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 22:00:21 GMT - Error: Connection terminated unexpectedly
+[ERROR] Wed, 15 May 2024 22:06:42 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3502bbc56b7sm17307620f8f.114 - gsmtp
+[ERROR] Wed, 15 May 2024 22:08:59 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-41fccfe1574sm242991415e9.48 - gsmtp
