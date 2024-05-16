@@ -16,7 +16,7 @@ export const cfg_site = {
       label: "Test",
       href: "/test",
     },
-   
+
     {
       label: "About",
       href: "/about",
@@ -38,10 +38,10 @@ export const cfg_site = {
     { label: "Link2", href: "#" },
   ],
   links: {
-		github: "https://github.com/KostuX",
-		twitter: "https://www.facebook.com/KostuX/",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/549160892965847042",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
+    github: "https://github.com/KostuX",
+    facebook: "https://www.facebook.com/KostuX/",
+    docs: "https://nextui.org",
+    discord: "https://discord.gg/549160892965847042",
+    sponsor: "https://patreon.com/jrgarciadev",
+  },
 };
