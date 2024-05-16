@@ -4,6 +4,7 @@ import { ironOptions } from "../config/session/session_config";
 import { Card } from "@nextui-org/react";
 import { TypeAnimation } from "react-type-animation";
 import bg from "../public/scetch_profile.png";
+import { Sketch_profile } from "../components/sketch";
 
 export default function Home({ data }) {
   return (

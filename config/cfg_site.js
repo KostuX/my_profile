@@ -1,5 +1,5 @@
 export const cfg_site = {
-  title: "Template",
+  title: "Kostas A",
   year: "2024",
   theme_secondary_light: "#1e00ff",
   theme_secondary_dark: "#ff0000",
