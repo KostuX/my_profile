@@ -9,13 +9,14 @@ export const cfg_site = {
       href: "/",
     },
     {
+      label: "CV",
+      href: "/cv",
+    },
+    {
       label: "Test",
       href: "/test",
     },
-    {
-      label: "API",
-      href: "/api/hello",
-    },
+   
     {
       label: "About",
       href: "/about",
@@ -36,4 +37,11 @@ export const cfg_site = {
     { label: "Link1", href: "#" },
     { label: "Link2", href: "#" },
   ],
+  links: {
+		github: "https://github.com/KostuX",
+		twitter: "https://www.facebook.com/KostuX/",
+		docs: "https://nextui.org",
+		discord: "https://discord.gg/549160892965847042",
+    sponsor: "https://patreon.com/jrgarciadev"
+	},
 };
