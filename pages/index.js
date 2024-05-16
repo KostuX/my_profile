@@ -3,6 +3,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import { ironOptions } from "../config/session/session_config";
 import { Card } from "@nextui-org/react";
 import { TypeAnimation } from "react-type-animation";
+import bg from "../public/scetch_profile.png";
 
 export default function Home({ data }) {
   return (
@@ -10,7 +11,16 @@ export default function Home({ data }) {
       <div className="justify-between h-full text-center ">
         {/**  <div className="border  m-5  border-theme_secondary">Top Center</div>*/}
 
-        <span className="grid md:grid-cols-2 gap-4 m-3 h-56 content-stretch ">
+        <span
+          className="grid md:grid-cols-2 gap-4 m-3 h-56 content-stretch background-repeat: no-repeat"
+          style={{
+            backgroundImage: `url(${bg.src})`,
+            width: "100%",
+            height: "100%",
+            "background-repeat": "no-repeat",
+            "background-position": "center",
+          }}
+        >
           <span className="hidden m-10 md:flex">
             <div
               className=" justify-start"
