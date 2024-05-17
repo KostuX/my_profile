@@ -38,7 +38,7 @@ export const Navbar = () => {
             <NextLink className="flex justify-start items-center " href="/">
               <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed out once, initially
+                  // Same substring at the start will onisly be typed out once, initially
                   "K. A.",
                 ]}
                 wrapper="span"
@@ -78,19 +78,19 @@ export const Navbar = () => {
         <NavbarContent className="sm:hidden flex basis-1 pl-4" justify="end">
           <NavbarItem className=" gap-2">
             <NextLink
-              isExternal
+              
               href={cfg.links.facebook}
               aria-label="Facebook"
             >
               <Facebook className="text-default-500" />
             </NextLink>
 
-            <NextLink isExternal href={cfg.links.github} aria-label="Github">
+            <NextLink  href={cfg.links.github} aria-label="Github">
               <GithubIcon className="text-default-500" />
             </NextLink>
 
             <NextLink
-              isExternal
+             
               href={
                 "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"
               }
