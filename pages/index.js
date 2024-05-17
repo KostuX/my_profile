@@ -6,6 +6,13 @@ import { TypeAnimation } from "react-type-animation";
 import bg from "../public/scetch_profile.png";
 import { Sketch_profile } from "../components/sketch";
 
+import { useRef } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Mesh } from "three";
+
+
 export default function Home({ data }) {
   return (
     <DefaultLayout>
