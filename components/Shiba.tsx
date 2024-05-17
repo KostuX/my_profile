@@ -20,7 +20,7 @@ function MeshComponent() {
 
 export function Shiba() {
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div className='absolute z-30	 justify-center items-center h-screen'>
       <Canvas className='h-2xl w-2xl'>
         <OrbitControls />
        

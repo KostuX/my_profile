@@ -27,7 +27,7 @@ export default function Home({ data }) {
         >
           <span className="hidden m-10 md:flex">
             <div
-              className=" justify-start"
+              className=" justify-start z-50 "
               style={{ width: "50%", height: "100%" }}
             >
               <h1>
@@ -86,43 +86,7 @@ export default function Home({ data }) {
             computers and various networking issues. I have great knowledge of
             ************* Microsoft Windows versions as well as configuration,
             support and installation experience. Also, I have a solid experience
-            using Microsoft Office, such as Microsoft Word, Excel and others.
-            Also, I can troubleshoot/repair various Routers, VPNs as well as
-            firewalls and IT security issues. I am a quick learner and
-            passionate about technologies. I have been repairing hardware of
-            various computers for more than ten years. I can easily assemble and
-            disassemble any laptop, desktop, tablet or stationery computer. Due
-            to my rich technical knowledge and sharp attention to detail, I am
-            able to quickly diagnose defective parts and replace them as well as
-            find correct parts for replacement or upgrade. In addition to
-            repairing hardware, I am also able to install as well as
-            troubleshoot various software, such as Microsoft Windows Operating
-            systems. In addition, I have assembled many computers with a water
-            cooling and implemented RAID technologies. Similarly, I am able to
-            set-up protected subnetwork for extra layer of security as well as
-            automate backup of a computer or shared network drive. Furthermore,
-            I have significant experience repairing electronic devises - such as
-            diagnosing issues and replacing fuses, resistors, mosfets, IC Chips
-            and other. I am able to use various equipment, such as multimeter,
-            soldering iron, hot air gun and ESR meter. I have assembled and
-            programmed multiple DIY drones and possess a solid understanding of
-            how drones function. Similarly, I have assembled and programmed 3D
-            printers and have significant understanding of 3D printing key
-            principles. I have also completed various online courses and YouTube
-            tutorials, which helped me learn basics of some programming
-            languages, such as Python, C++, Java and JavaScript. I am actively
-            looking for opportunities to learn something new. I believe I would
-            be a great long-term investment for innovative company like yours,
-            which is committed to providing cutting edge technologies to
-            reputable clients, such as Microsoft, HP, Dell and others. I can
-            promise my exceptional performance, which will help you build even
-            better reputation. I am quick at learning any new skills and
-            adapting to changing environment, so I will quickly master key
-            responsibilities. The enclosed resume expands on my work experience,
-            education, online courses completed and other. If you require more
-            information, please contact me at your earliest convenience. Thank
-            you for your consideration and I am looking forward to hearing back
-            from you soon.
+           
           </span>
         </span>
       </div>
