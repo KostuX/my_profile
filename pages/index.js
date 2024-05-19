@@ -3,7 +3,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import { ironOptions } from "../config/session/session_config";
 import { Card } from "@nextui-org/react";
 import { TypeAnimation } from "react-type-animation";
-import { Shiba } from "../components/shiba";
+import { Shiba } from "../components/Shiba";
 
 import { useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
