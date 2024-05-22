@@ -10,26 +10,98 @@ import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
-
+import React, { useState, useEffect } from 'react';
 
 export default function Home({ data }) {
 
+  useEffect(() => { import('@google/model-viewer').catch(console.error); }, []);
 
+  useEffect(() => {
+    if (document) {  
+         const modelViewer = document.getElementById("3d_main");
+         if (modelViewer) {
+          let xMaxRange = 35;
+          let yMaxTop = 135;
+          let yMin = 35;
+          let yMid = yMaxTop/2;
+          
+          const orbitCycle = [
+            xMaxRange+'deg '+yMaxTop+'deg 10m', // top left
+                      ' 0deg '+yMaxTop+'deg 10m', // top 
+            -xMaxRange+'deg '+yMaxTop+'deg 10m', // top right
+            -xMaxRange+'deg '+yMid+'deg 10m', // mid right
+                    ' 0deg '+yMid+'deg 10m', // center
+            xMaxRange+'deg '+yMid+'deg 10m', // mid left
+            xMaxRange+'deg '+yMin+'deg 10m', // bottom left 65
+                    ' 0deg '+yMin+'deg 10m', // bottom mid
+            -xMaxRange+'deg '+yMin+'deg 10m', // bottom right
+         
+            modelViewer.cameraOrbit
+          ]
+          
+         }
+
+         document.addEventListener('mousemove', (event) => {
+          const width  = window.innerWidth || document.documentElement.clientWidth || 
+          document.body.clientWidth;
+      
+          const height = window.innerHeight|| document.documentElement.clientHeight|| 
+          document.body.clientHeight;
+
+          let xPercentage = event.clientX/width;
+          let yPercentage = event.clientY/height;
+          
+          let xDegVal = ((-20 - (-35)) * xPercentage) + (-35);
+          let yDegVal = ((120 - 135) * yPercentage) + 135;
+        
+          modelViewer.cameraOrbit = -xDegVal+'deg '+ yDegVal+'deg 10m';
+      });
+      
+
+    }
+  }, []);
 
   return (
+
     <DefaultLayout>
-      <div className="justify-between h-full text-center ">
+       <div >
+        <model-viewer 
+        className='absolute sm:hidden  justify-center items-center h-screen' 
+        style={{ height:"100vh", width:"100%", position:"absolute" , zIndex: 0}}  
+        id="3d_main" 
+        enable-pan shadow-intensity="1"  	
+        camera-controls touch-action="pan-y"  			
+    interaction-prompt="none"    oncontextmenu="return false;" 
+    src="/shiba/untitled.glb" 
+
+    disable-zoom
+    >
+      
+       </model-viewer>
+
+        </div>
+       
+   
+    
+      <div className="justify-between h-full text-center " >
         {/**  <div className="border  m-5  border-theme_secondary">Top Center</div>*/}
-        <Shiba/>
+
+     
+      
+    
+     
         <span
           className="grid md:grid-cols-2 gap-4 m-3 h-56 content-stretch background-repeat: no-repeat"
          
         >
+   
           <span className="hidden m-10 md:flex">
+       
             <div
               className=" justify-start z-50 "
               style={{ width: "50%", height: "100%" }}
             >
+                   
               <h1>
                 <TypeAnimation
                   sequence={[
@@ -77,20 +149,25 @@ export default function Home({ data }) {
                   />
                 </div>
               </h1>
+              
             </div>
+           
           </span>
+        
 
           <span className="mr-10 ms:mr-52 mt-10  border-theme_secondary text-xl">
             <h1>My name is Konstantinas</h1>I am exceptionally analytical,
-            organized and motivated person with rich experience repairing
-            computers and various networking issues. I have great knowledge of
-            ************* Microsoft Windows versions as well as configuration,
-            support and installation experience. Also, I have a solid experience
+            
            
           </span>
+
         </span>
+ 
       </div>
+     
+
     </DefaultLayout>
+
   );
 }
 export const getServerSideProps = withIronSessionSsr(
