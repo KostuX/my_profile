@@ -1,35 +1,28 @@
+import * as THREE from 'three';
 
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-import { useRef } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Mesh } from "three";
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
 
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
 
-function MeshComponent() {
-  const fileUrl = "./soulless/scene.gltf";
-  const mesh = useRef();
-  const gltf = useLoader(GLTFLoader, fileUrl);
+camera.position.z = 5;
 
- 
+function animate() {
 
-  return (
-    <mesh ref={mesh}>
-      <primitive object={gltf.scene} />
-    </mesh>
-  );
+	requestAnimationFrame( animate );
+
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.01;
+
+	renderer.render( scene, camera );
+
 }
 
-export function Shiba() {
-  return (
-    <div className='flex justify-center items-center h-screen'>
-      <Canvas className='h-2xl w-2xl'>
-        <OrbitControls />
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <MeshComponent />
-      </Canvas>
-    </div>
-  );
-}
+animate();
