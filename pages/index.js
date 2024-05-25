@@ -19,27 +19,7 @@ export default function Home({ data }) {
   useEffect(() => {
     if (document) {  
          const modelViewer = document.getElementById("3d_main");
-         if (modelViewer) {
-          let xMaxRange = 35;
-          let yMaxTop = 135;
-          let yMin = 35;
-          let yMid = yMaxTop/2;
-          
-          const orbitCycle = [
-            xMaxRange+'deg '+yMaxTop+'deg 10m', // top left
-                      ' 0deg '+yMaxTop+'deg 10m', // top 
-            -xMaxRange+'deg '+yMaxTop+'deg 10m', // top right
-            -xMaxRange+'deg '+yMid+'deg 10m', // mid right
-                    ' 0deg '+yMid+'deg 10m', // center
-            xMaxRange+'deg '+yMid+'deg 10m', // mid left
-            xMaxRange+'deg '+yMin+'deg 10m', // bottom left 65
-                    ' 0deg '+yMin+'deg 10m', // bottom mid
-            -xMaxRange+'deg '+yMin+'deg 10m', // bottom right
-         
-            modelViewer.cameraOrbit
-          ]
-          
-         }
+ 
 
          document.addEventListener('mousemove', (event) => {
           const width  = window.innerWidth || document.documentElement.clientWidth || 
@@ -50,9 +30,16 @@ export default function Home({ data }) {
 
           let xPercentage = event.clientX/width;
           let yPercentage = event.clientY/height;
+
+          let xDegVal = ((-20 - (-35)) * xPercentage) -10;
+          let yDegVal = ((120 - 135) * yPercentage) +100;
+
+          /*
           
           let xDegVal = ((-20 - (-35)) * xPercentage) + (-35);
           let yDegVal = ((120 - 135) * yPercentage) + 135;
+
+          */
         
           modelViewer.cameraOrbit = -xDegVal+'deg '+ yDegVal+'deg 10m';
       });
