@@ -3,7 +3,7 @@ import { Logo } from "./icons";
 export const Foot = () => {
   return (
     <footer className="border-t  bg-background w-full   p-4 text-sm text-gray-300  ">
-      <span className=" text-center grid grid-cols-3 gap-4  m-3 text-foreground/80">
+      <span className=" text-center grid grid-cols-3 gap-4  m-3 text-foreground/80 ">
         <span>
           <Logo />
         </span>
