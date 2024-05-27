@@ -1,19 +1,18 @@
 import list from "../../public/hex logo/list"
+import Hexagon from "../hexagon"
 export const Index_block2 = (props)=>{
     return(
     <div {...props}>
-        <span className="text-center m-50">
-            <h1>【Technologies】</h1>
+        <span >
+            <h1 className="text-center mb-10">【My Tools】</h1>
             </span>
 
-              <span className="text-center m-50">
+              <span className="text-center m-50 ">
             <div className="col-span-1 mx-56">
             
-            {list().map((e)=>(
-                
-               
-            <img class="h-auto max-w-full w-20 h-20 m-2 inline  hover:scale-125 transition-all duration-500" src={`/hex logo/${e}`} alt="image description"></img> 
-            ))}
+            {list().map((e)=>(   
+            <img className="h-auto max-w-full w-20 h-20 m-2 inline  hover:scale-125 transition-all duration-500" src={`/hex logo/${e}`} alt="image description"></img> 
+ ))}
             
             </div>  
             </span>
@@ -29,6 +28,20 @@ export const Index_block2 = (props)=>{
 	
 </div>
                  
+      </span>
+
+
+
+
+      <span>
+        <div className="flex flex-wrap ">
+ {list().map((e)=>(    
+  <div className="hover:scale-125 transition-all duration-500">
+<Hexagon size={90} props={{className:'bg-red-500 '}}/>
+</div>
+ ))}
+</div>
+
       </span>
 
     </div>

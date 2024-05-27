@@ -62,7 +62,7 @@ export const Index_block1 = (props)=>{
        </div>           
      </span>
 
-     <span className=" ms:mr-52 mt-10  border-theme_secondary text-xl">
+     <span className=" ms:mr-52 mt-52  border-theme_secondary text-xl">
   <h1>Mｙ　ｎａｍｅ　ｉｓ</h1>
   <h1 >【Kｏｎｓｔａｎｔａｎｔｉｎａｓ】</h1>
   <h3 className="mb-5">But you can call me Kostas.</h3>
