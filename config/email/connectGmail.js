@@ -5,7 +5,7 @@ const port = process.env.EMAIL_PORT;
 const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 
-const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({
   host: host,
   port: port,
   secure: false,
@@ -15,4 +15,4 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-module.exports = { transporter };
+

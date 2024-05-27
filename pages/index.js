@@ -61,8 +61,8 @@ export default function Home({ data }) {
     <DefaultLayout>   
            
       <div className="justify-between text-center inline-block h-screen" >  
-        {content.map((e)=>(       
-                <div className="h-screen w-screen">{e}</div>          
+        {content.map((e,i)=>(       
+                <div key={i} className="h-screen w-screen">{e}</div>          
         ))} 
       </div>
    
