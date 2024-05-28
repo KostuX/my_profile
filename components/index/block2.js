@@ -1,21 +1,19 @@
-import list from "../../public/hex logo/list"
-import Hexagon from "../hexagon"
+
+import { arangeHex } from "../../lib/helper/hexarange"
 export const Index_block2 = (props)=>{
     return(
     <div {...props}>
-        <span >
-            <h1 className="text-center mb-10">【My Tools】</h1>
+        <span  >
+            <h1 className="text-center mb-24">【My Tools】</h1>
             </span>
 
-              <span className="text-center m-50 ">
-            <div className="col-span-1 mx-56">
             
-            {list().map((e)=>(   
-            <img className="h-auto max-w-full w-20 h-20 m-2 inline  hover:scale-125 transition-all duration-500" src={`/hex logo/${e}`} alt="image description"></img> 
- ))}
+            <div className="flex flex-wrap mx-56 justify-center">
+            {arangeHex(3)}
+
             
             </div>  
-            </span>
+           
       <span className="grid grid-cols-1 gap-4 m-10">
           <div className="row-span-1 flex">
             <ul>Programming languages: Java, JavaScript, PHP, Python</ul>
@@ -33,16 +31,6 @@ export const Index_block2 = (props)=>{
 
 
 
-      <span>
-        <div className="flex flex-wrap ">
- {list().map((e)=>(    
-  <div className="hover:scale-125 transition-all duration-500">
-<Hexagon size={90} props={{className:'bg-red-500 '}}/>
-</div>
- ))}
-</div>
-
-      </span>
 
     </div>
     )
