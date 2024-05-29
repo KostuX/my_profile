@@ -5,7 +5,7 @@ export const Index_block1 = (props) => {
     <div className="h-screen " {...props}>
       <span className="grid grid-cols-3 gap-4 justify-evenly">
         <span className="hidden m-10 md:flex">
-          <div className=" justify-start  " style={{ height: "100%" }}>
+          <div className=" justify-start " style={{ height: "100%" }}>
             <h1>
               <TypeAnimation
                 sequence={["Hallo", 500, "Heloo", 500, "Hell0o", 500, "Hi"]}
@@ -47,7 +47,7 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span className=" ms:mr-52 mt-52  border-theme_secondary text-xl">
+        <span className=" ms:mr-52 mt-52  border-theme_secondary text-xl  text-center">
           <h1>Mｙ　ｎａｍｅ　ｉｓ</h1>
           <h1>【Kｏｎｓｔａｎｔａｎｔｉｎａｓ】</h1>
           <h3 className="mb-5">But you can call me Kostas.</h3>

@@ -92,23 +92,68 @@ const qq7 = [
 
 const qq8 = [
   {
-    subject: "Network Security",
+    subject: "Applied Human Language Technology",
+    A: 84,
+  },
+  {
+    subject: "Derivation of Algorithms",
+    A: 72,
+  },
+  {
+    subject: "Ubiquitous Computing",
     A: 88,
   },
   {
-    subject: "IT Administration",
-    A: 95,
+    subject: "Research Skills",
+    A: 89,
   },
   {
-    subject: "Systems Software",
-    A: 83,
+    subject: "Data Analytics",
+    A: 75,
+  },
+  {
+    subject: "Final Year Project",
+    A: 0,
+  },
+
+  {
+    subject: "Text Analysis",
+    A: 0,
+  },
+  {
+    subject: "Web Services",
+    A: 0,
+  },
+  {
+    subject: "Computer Vision",
+    A: 0,
+  },
+
+  {
+    subject: "Computtational Intelligence",
+    A: 0,
   },
 ];
 
 const charts = [
-  { title: "Honors", chart: <Chart data={qq8} />, avg: 72 },
-  { title: "QQ6", chart: <Chart data={qq6} />, avg: 82 },
-  { title: "Ordinary", chart: <Chart data={qq7} />, avg: 82 },
+  {
+    title: "Bachelor of Science (Honours) in ",
+    subTitle: "Computing in Information Technology (Level 8)",
+    chart: <Chart data={qq8} />,
+    avg: 70,
+  },
+  {
+    title: "Advanced Certificate (QQI Level 6)",
+    subTitle: "Computer Systems and Networks",
+    chart: <Chart data={qq6} />,
+    avg: 82,
+  },
+  {
+    title: "Bachelor of Science (Ordinary) in ",
+    subTitle: "Computing in Information Technology (Level 7)",
+    chart: <Chart data={qq7} />,
+    avg: 85,
+  },
 ];
 let inter;
 export const Index_block3 = (props) => {
@@ -146,35 +191,34 @@ export const Index_block3 = (props) => {
     <div className="h-screen ">
       <span className=" text-xl grid grid-cols-3 gap-4 justify-evenly">
         <span></span>
-        <span className="   text-xl text-center">
-          <h1>Mｙ　ｎａｍｅ　ｉｓ</h1>
-          <h1>【Kｏｎｓｔａｎｔａｎｔｉｎａｓ】</h1>
-          <h3 className="mb-5">But you can call me Kostas.</h3>
-          <h3>
-            I'm a Software and Web App Developer with experience in designing,
-            developing, and maintaining robust applications. I have skills in
-            AI/ML, data & text analytics, software engineering, and web
-            front-end development. Currently, my focus is on web app back-end
-            development.
+        <span className="text-xl text-center">
+          <h1 className="mb-5">【Education】</h1>
+
+          <h3 className="mb-12">
+            Maintained a high GPA throughout my academic career, demonstrating
+            strong dedication and intellectual capability. Awarded "Student of
+            the Year" for exemplary performance during studies. Graduated with
+            [Honors/Distinction], recognized for outstanding academic
+            achievements and commitment to excellence.
           </h3>
-          <div className="grid  place-items-center mt-5">
-            <img src="/programming_.svg" height={50} width={50} />
-          </div>
         </span>
         <span></span>
       </span>
 
       <div className="h-1/3 ">
-        <h1 className="text-center">{charts[activeIndex].title}</h1>
-        <span> </span>
-        {charts[activeIndex].chart}
+        <span className="mb-12">
+          <h1 className="text-center">{charts[activeIndex].title}</h1>
+          <h2 className="text-center">{charts[activeIndex].subTitle}</h2>
+        </span>
+
+        <span className="mb-56">{charts[activeIndex].chart} </span>
+        <span className="  grid justify-items-center mb-12">
+          {progressBar({
+            value: charts[activeIndex].avg,
+            title: "Grade Average",
+          })}
+        </span>
       </div>
-      <span className=" grid justify-items-center">
-        {progressBar({
-          value: charts[activeIndex].avg,
-          title: "Grade Average",
-        })}
-      </span>
     </div>
   );
 };
