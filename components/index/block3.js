@@ -1,12 +1,7 @@
 import React, { PureComponent, useState } from "react";
 import { Chart } from "./radarChart/radarChart";
 import { progressBar } from "../progressBar";
-import { Progress } from "@nextui-org/react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 
-import { Button, ButtonGroup } from "@nextui-org/button";
-import "/styles/Carousel.css";
 import {
   Radar,
   RadarChart,

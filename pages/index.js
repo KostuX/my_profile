@@ -4,10 +4,18 @@ import { ironOptions } from "../config/session/session_config";
 import { Index_block1 } from "../components/index/block1";
 import { Index_block2 } from "../components/index/block2";
 import { Index_block3 } from "../components/index/block3";
+import { Index_block4 } from "../components/index/block4";
+import { Index_block5 } from "../components/index/block5";
 
 import React, { useState, useEffect } from "react";
 
-let content = [<Index_block1 />, <Index_block2 />, <Index_block3 />];
+let content = [
+  <Index_block1 />,
+  <Index_block2 />,
+  <Index_block3 />,
+  <Index_block4 />,
+  <Index_block5 />,
+];
 
 export default function Home({ data }) {
   useEffect(() => {

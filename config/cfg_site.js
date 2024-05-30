@@ -1,5 +1,5 @@
 export const cfg_site = {
-  title: "Kostas A",
+  title: "K. A.",
   year: "2024",
   theme_secondary_light: "#1e00ff",
   theme_secondary_dark: "#ff0000",
@@ -9,17 +9,12 @@ export const cfg_site = {
       href: "/",
     },
     {
-      label: "CV",
-      href: "/cv",
+      label: "My Projects",
+      href: "/",
     },
-    {
-      label: "Test",
-      href: "/test",
-    },
-
     {
       label: "About",
-      href: "/about",
+      href: "/",
     },
   ],
   navMenuItems: [
