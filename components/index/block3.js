@@ -63,25 +63,22 @@ const qq7 = [
     subject: "Network Distributed Computing",
     A: 96,
   },
-
   {
-    subject: "Troubleshooting IP Networks",
-    A: 82,
+    subject: "Data Structures & Algorithms",
+    A: 83,
   },
 
   {
     subject: "Major Group Project",
     A: 90,
-    fullMark: 100,
   },
   {
     subject: "Parallel Computing",
     A: 86,
   },
   {
-    subject: "Data Structures & Algorithms",
-    A: 83,
-    fullMark: 100,
+    subject: "Troubleshooting IP Networks",
+    A: 82,
   },
 ];
 
