@@ -205,7 +205,7 @@ export const Index_block3 = (props) => {
         </span>
 
         <span className="">{charts[activeIndex].chart} </span>
-        <span className="  grid justify-items-center mb-12">
+        <span className="mx-12  grid justify-items-center mb-12">
           {progressBar({
             value: charts[activeIndex].avg,
             title: "Grade Average",
