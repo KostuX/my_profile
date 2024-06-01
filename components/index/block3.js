@@ -58,6 +58,15 @@ const qq7 = [
     subject: "Object Oriented & Design Patterns",
     A: 89,
   },
+  {
+    subject: "Network Distributed Computing",
+    A: 96,
+  },
+
+  {
+    subject: "Troubleshooting IP Networks",
+    A: 82,
+  },
 
   {
     subject: "Major Group Project",
@@ -68,14 +77,7 @@ const qq7 = [
     subject: "Parallel Computing",
     A: 86,
   },
-  {
-    subject: "Network Distributed Computing",
-    A: 96,
-  },
-  {
-    subject: "Troubleshooting IP Networks",
-    A: 82,
-  },
+
   {
     subject: "Project Skills",
     A: 70,
