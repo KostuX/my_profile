@@ -39,7 +39,7 @@ const qq6 = [
 
 const qq7 = [
   {
-    subject: "Data Structures and Algorithms",
+    subject: "Data Structures & Algorithms",
     A: 83,
     fullMark: 100,
   },
@@ -49,7 +49,7 @@ const qq7 = [
     fullMark: 100,
   },
   {
-    subject: "Advanced Switching and Routing",
+    subject: "Advanced Switching & Routing",
     A: 74,
     fullMark: 100,
   },
@@ -74,7 +74,7 @@ const qq7 = [
     fullMark: 100,
   },
   {
-    subject: "Object Oriented and Design Patterns",
+    subject: "Object Oriented & Design Patterns",
     A: 89,
     fullMark: 100,
   },
