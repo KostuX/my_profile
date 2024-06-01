@@ -54,10 +54,10 @@ const qq7 = [
     fullMark: 100,
   },
   {
-    subject: "Project Skills",
-    A: 70,
-    fullMark: 100,
+    subject: "Object Oriented & Design Patterns",
+    A: 89,
   },
+
   {
     subject: "Major Group Project",
     A: 90,
@@ -66,22 +66,20 @@ const qq7 = [
   {
     subject: "Parallel Computing",
     A: 86,
-    fullMark: 100,
   },
   {
     subject: "Network Distributed Computing",
     A: 96,
-    fullMark: 100,
   },
   {
-    subject: "Object Oriented & Design Patterns",
-    A: 89,
+    subject: "Project Skills",
+    A: 70,
     fullMark: 100,
   },
+
   {
     subject: "Troubleshooting IP Networks",
     A: 82,
-    fullMark: 100,
   },
 ];
 
@@ -95,17 +93,18 @@ const qq8 = [
     A: 72,
   },
   {
-    subject: "Ubiquitous Computing",
-    A: 88,
+    subject: "Data Analytics",
+    A: 75,
   },
   {
     subject: "Research Skills",
     A: 89,
   },
   {
-    subject: "Data Analytics",
-    A: 75,
+    subject: "Ubiquitous Computing",
+    A: 88,
   },
+
   {
     subject: "Final Year Project",
     A: 0,
