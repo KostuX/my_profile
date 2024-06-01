@@ -34,7 +34,8 @@ export const cfg_site = {
   ],
   links: {
     github: "https://github.com/KostuX",
-    facebook: "https://www.facebook.com/KostuX/",
+    github2: "https://github.com/Kostas9999",
+    facebook: "https://www.facebook.com/KostuX",
     docs: "https://nextui.org",
     discord: "https://discord.gg/549160892965847042",
     sponsor: "https://patreon.com/jrgarciadev",

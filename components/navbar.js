@@ -4,13 +4,7 @@ import { cfg_site as cfg } from "../config/cfg_site";
 import { Logo } from "../components/icons";
 import { TypeAnimation } from "react-type-animation";
 import { useRouter } from "next/router";
-import {
-  Facebook,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  Email,
-} from "../components/icons";
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -76,30 +70,6 @@ export const Navbar = () => {
 
         {/** Menu | end | large */}
         <NavbarContent className="sm:hidden flex basis-1 pl-4" justify="end">
-          <NavbarItem className=" gap-2">
-            <NextLink
-              
-              href={cfg.links.facebook}
-              aria-label="Facebook"
-            >
-              <Facebook className="text-default-500" />
-            </NextLink>
-
-            <NextLink  href={cfg.links.github} aria-label="Github">
-              <GithubIcon className="text-default-500" />
-            </NextLink>
-
-            <NextLink
-             
-              href={
-                "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"
-              }
-              aria-label="Email"
-            >
-              <Email className="text-default-500" />
-            </NextLink>
-          </NavbarItem>
-
           <NavbarMenuToggle />
           <ThemeSwitch />
           <NavbarMenu justify="end">
