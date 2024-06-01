@@ -24,16 +24,17 @@ const qq6 = [
     A: 83,
   },
   {
-    subject: "Communication",
-    A: 65,
+    subject: "Network Infrastructure",
+    A: 87,
   },
+
   {
     subject: "P & P Development",
     A: 74,
   },
   {
-    subject: "Network Infrastructure",
-    A: 87,
+    subject: "Communication",
+    A: 65,
   },
 ];
 
@@ -72,15 +73,15 @@ const qq7 = [
     A: 96,
   },
   {
+    subject: "Troubleshooting IP Networks",
+    A: 82,
+  },
+  {
     subject: "Project Skills",
     A: 70,
     fullMark: 100,
   },
-
-  {
-    subject: "Troubleshooting IP Networks",
-    A: 82,
-  },
+  //
 ];
 
 const qq8 = [
