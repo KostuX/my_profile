@@ -55,8 +55,9 @@ const qq7 = [
     fullMark: 100,
   },
   {
-    subject: "Object Oriented & Design Patterns",
-    A: 89,
+    subject: "Project Skills",
+    A: 70,
+    fullMark: 100,
   },
   {
     subject: "Network Distributed Computing",
@@ -79,11 +80,9 @@ const qq7 = [
   },
 
   {
-    subject: "Project Skills",
-    A: 70,
-    fullMark: 100,
+    subject: "Object Oriented Design Patterns",
+    A: 89,
   },
-  //
 ];
 
 const qq8 = [
