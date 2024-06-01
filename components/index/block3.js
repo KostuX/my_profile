@@ -40,9 +40,8 @@ const qq6 = [
 
 const qq7 = [
   {
-    subject: "Data Structures & Algorithms",
-    A: 83,
-    fullMark: 100,
+    subject: "Object Oriented Design Patterns",
+    A: 89,
   },
   {
     subject: "Rich Web Applications",
@@ -50,15 +49,16 @@ const qq7 = [
     fullMark: 100,
   },
   {
-    subject: "Advanced Switching & Routing",
-    A: 74,
-    fullMark: 100,
-  },
-  {
     subject: "Project Skills",
     A: 70,
     fullMark: 100,
   },
+  {
+    subject: "Advanced Switching & Routing",
+    A: 74,
+    fullMark: 100,
+  },
+
   {
     subject: "Network Distributed Computing",
     A: 96,
@@ -78,10 +78,10 @@ const qq7 = [
     subject: "Parallel Computing",
     A: 86,
   },
-
   {
-    subject: "Object Oriented Design Patterns",
-    A: 89,
+    subject: "Data Structures & Algorithms",
+    A: 83,
+    fullMark: 100,
   },
 ];
 
