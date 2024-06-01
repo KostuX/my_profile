@@ -3,8 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 export const Index_block1 = (props) => {
   return (
     <div className="h-screen " {...props}>
-      <span className="grid grid-cols-3 gap-4 justify-evenly">
-        <span className="hidden m-10 md:flex">
+      <span className="grid sm:grid-cols-3 gap-4 justify-evenly">
+        <span className="hidden  sm:m-10 sm:flex">
           <div className=" justify-start " style={{ height: "100%" }}>
             <h1>
               <TypeAnimation
@@ -47,7 +47,7 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span className=" ms:mr-52 mt-52  border-theme_secondary text-xl  text-center">
+        <span className="m-12 sm:mt-52    bg-theme_secondary-950 border-theme_secondary text-xl  text-center">
           <h1>Mｙ　ｎａｍｅ　ｉｓ</h1>
           <h1>【Kｏｎｓｔａｎｔａｎｔｉｎａｓ】</h1>
           <h3 className="mb-5">But you can call me Kostas.</h3>
@@ -63,14 +63,11 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span>
+        <span className=" fixed sm:relative opacity-25 sm:opacity-100 ">
           <model-viewer
-            className="absolute sm:hidden  justify-center items-center "
             style={{
               height: "100vh",
-              width: "50%",
-              position: "absolute",
-              float: "left",
+              width: "100vh",
               zIndex: 0,
             }}
             id="3d_main"

@@ -50,7 +50,7 @@ const certs = [
 
 export const Index_block4 = (props) => {
   return (
-    <div className="h-screen grid grid-cols-3 gap-4 ">
+    <div className="h-screen grid sm:grid-cols-3 gap-4 ">
       {certs.map((e, index) => (
         <div className=" place-content-around flex">
           {index == 1 ? (

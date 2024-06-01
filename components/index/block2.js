@@ -2,12 +2,12 @@ import { arangeHex } from "../../lib/helper/hexarange";
 export const Index_block2 = (props) => {
   return (
     <div className="h-screen text-center">
-      <span className="  border-theme_secondary text-xl grid grid-cols-3 gap-4 justify-evenly">
+      <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 justify-evenly">
         <span></span>
         <span>
           <h1 className="mb-5">【My tools】</h1>
 
-          <h3 className="mb-5">
+          <h3 className="mb-5   ">
             Over the past years, I have honed my skills in various programming
             languages, including Java, JavaScript, PHP and Python, while working
             on diverse projects that span web development, mobile app creation,
@@ -16,9 +16,11 @@ export const Index_block2 = (props) => {
         </span>
       </span>
 
-      <div className="flex flex-wrap mx-56 justify-center">{arangeHex(3)}</div>
+      <div className="sm:flex sm:flex-wrap sm:mx-56 sm:justify-center">
+        {arangeHex(3)}
+      </div>
 
-      <span className="grid grid-cols-1 gap-4 m-10">
+      <span className="hidden sm:flex grid grid-cols-1 gap-4 m-10">
         <div className="row-span-1 flex">
           <ul>Programming languages: Java, JavaScript, PHP, Python</ul>
           <ul>
