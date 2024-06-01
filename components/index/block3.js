@@ -44,10 +44,10 @@ const qq7 = [
     A: 89,
   },
   {
-    subject: "Rich Web Applications",
-    A: 98,
-    fullMark: 100,
+    subject: "Troubleshooting IP Networks",
+    A: 82,
   },
+
   {
     subject: "Project Skills",
     A: 70,
@@ -77,8 +77,9 @@ const qq7 = [
     A: 86,
   },
   {
-    subject: "Troubleshooting IP Networks",
-    A: 82,
+    subject: "Rich Web Applications",
+    A: 98,
+    fullMark: 100,
   },
 ];
 
