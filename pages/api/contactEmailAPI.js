@@ -10,9 +10,33 @@ export default withIronSessionApiRoute(test, ironOptions);
 async function test(req, res) {
   let data = req.body.data;
 
-  let msg = `Message from www.konstantinas.com. Form Email: ${data.email}. Text: ${data.text}`;
 
-  await sendMail(myMail, msg, (e) => {
-    res.status(200).send({ ok: e.ok, data: [e.data] });
-  });
+    let err = [];
+    setMsgError([]);
+    let mail = validate(data.email, "email", "Email");
+    if (!mail.ok) {
+      err = err.concat(mail.data);
+    }
+    let text = validate(data.text, "text", "Text field");
+    if (!text.ok) {
+      err = err.concat(text.data);
+    }
+
+ 
+
+    if (err.length == 0) {
+
+      let msg = `Message from www.konstantinas.com. Form Email: ${data.email}. Text: ${data.text}`;
+      await sendMail(myMail, msg, (e) => {
+        res.status(200).send({ ok: e.ok, data: [e.data] });
+      });    
+    
+    } 
+    else{
+      res.status(200).send({ ok: false, data: err });
+    }
+ 
+
+
+ 
 }
