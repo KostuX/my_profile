@@ -3,6 +3,7 @@ import { ironOptions } from "../../config/session/session_config";
 import log_write from "../../lib/logs/LOG_write";
 import sendMail from "../../lib/email/email";
 import { validate } from "../../lib/helper/validator";
+import validator from "validator";
 
 let myMail = process.env.EMAIL_MY;
 
@@ -10,6 +11,8 @@ export default withIronSessionApiRoute(test, ironOptions);
 
 async function test(req, res) {
   let data = req.body.data;
+  data.email = validator.escape(data.email);
+  data.text = validator.escape(data.text);
 
   let err = [];
 

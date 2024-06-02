@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
 import { printError } from "../../lib/helper/printError";
 import { validate } from "../../lib/helper/validator";
+import validator from "validator";
 var xss = require("xss");
 import {
   Facebook,
@@ -21,11 +22,13 @@ export const Index_block5 = (props) => {
   function submitEmail() {
     let err = [];
     setMsgError([]);
-    let mail = validate(msgEmail, "email", "Email");
+    setMsgEmail(validator.escape(msgEmail));
+    setMsgText(validator.escape(msgText));
+    let mail = validate(msgEmail, "email", "Email", 5, 128);
     if (!mail.ok) {
       err = err.concat(mail.data);
     }
-    let text = validate(msgText, "text", "Text field");
+    let text = validate(msgText, "text", "Text field", 5, 512);
     if (!text.ok) {
       err = err.concat(text.data);
     }
@@ -72,13 +75,20 @@ export const Index_block5 = (props) => {
             value={msgEmail}
             placeholder="Enter your email"
             className=" mb-5"
+            maxLength={128}
             onChange={(e) => setMsgEmail(e.target.value)}
           />
-          <Textarea
-            placeholder="Type here..."
-            rows={20}
-            onChange={(e) => setMsgText(e.target.value)}
-          />
+          <span className="flex">
+            <Textarea
+              placeholder="Type here..."
+              rows={20}
+              maxLength={512}
+              onChange={(e) => setMsgText(e.target.value)}
+            />
+            <span className="text-xs place-self-end ">
+              {msgText.length != 0 ? 512 - msgText.length : ""}
+            </span>
+          </span>
           {printError(msgError)}
           <Button
             color="primary"
