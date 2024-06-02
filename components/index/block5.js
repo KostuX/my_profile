@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input, Textarea, Button } from "@nextui-org/react";
 import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
+import { printError } from "../../lib/helper/printError";
+import { validate } from "../../lib/helper/validator";
 import {
   Facebook,
   GithubIcon,
@@ -10,12 +12,23 @@ import {
   Email,
 } from "../../components/icons";
 export const Index_block5 = (props) => {
-  return (
+  const [msgText, setMsgText] = useState('')
+  const [msgEmail, setMsgEmail] = useState('')
+  const [msgError, setMsgError] = useState([])
+ 
+  
+
+  function submitEmail(e){
+    setMsgError(['err'])
+  }
+
+   return (
     <div className="h-screen mt-56 text-center  text-xl">
       <h1 className="mb-5 ">【Contact】</h1>
       <span className="mx-12  grid sm:grid-cols-3 gap-4">
         <span></span>
         <span className=" justify-center h-1/2">
+          <span className="text-pink-500"></span>
           {" "}
           <Input
             size="sm"
@@ -24,9 +37,12 @@ export const Index_block5 = (props) => {
             variant="bordered"
             placeholder="Enter your email"
             className=" mb-5"
+           
           />
           <Textarea placeholder="Type here..." rows={20} />
-          <Button color="primary" variant="ghost" className="mt-12">
+         
+          {printError(msgError)}
+          <Button color="primary" variant="ghost" className="mt-12"  onPress={(e)=>{submitEmail(e.target.value)}}>
             Submit
           </Button>
         </span>
