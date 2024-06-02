@@ -10,21 +10,25 @@ export const cfg_site = {
     },
     {
       label: "My Projects",
-      href: "/",
+      href: "/projects",
     },
     {
-      label: "About",
-      href: "/",
+      label: "Contact",
+      href: "/contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "#",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "About",
-      href: "#",
+      label: "My Projects",
+      href: "/projects",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
     },
   ],
 
