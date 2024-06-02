@@ -12,37 +12,72 @@ import {
   Email,
 } from "../../components/icons";
 export const Index_block5 = (props) => {
-  const [msgText, setMsgText] = useState('')
-  const [msgEmail, setMsgEmail] = useState('')
-  const [msgError, setMsgError] = useState([])
- 
-  
+  const [msgText, setMsgText] = useState("");
+  const [msgEmail, setMsgEmail] = useState("");
+  const [msgError, setMsgError] = useState([]);
+  const [submited, setSubmited] = useState(false);
 
-  function submitEmail(e){
-    setMsgError(['err'])
+  function submitEmail() {
+    let err = [];
+    setMsgError([]);
+    let mail = validate(msgEmail, "email", "Email");
+    if (!mail.ok) {
+      err = err.concat(mail.data);
+    }
+    let text = validate(msgText, "text", "Text field");
+    if (!text.ok) {
+      err = err.concat(text.data);
+    }
+
+    if (err.length == 0) {
+      setSubmited(true);
+      sendEmail();
+    } else {
+      setMsgError(err);
+    }
   }
 
-   return (
+  async function sendEmail() {
+    let endpoint = "/api/contactEmailAPI";
+    let api_data = { data: { email: msgEmail, text: msgText } };
+
+    let response = await fetch(endpoint, {
+      method: "POST",
+      body: JSON.stringify(api_data),
+      headers: { "Content-type": "application/json" },
+    });
+    let res = await response.json();
+    let data = res;
+  }
+
+  return (
     <div className="h-screen mt-56 text-center  text-xl">
       <h1 className="mb-5 ">【Contact】</h1>
       <span className="mx-12  grid sm:grid-cols-3 gap-4">
         <span></span>
         <span className=" justify-center h-1/2">
-          <span className="text-pink-500"></span>
-          {" "}
+          <span className="text-pink-500"></span>{" "}
           <Input
             size="sm"
-            type="email"
             label="Email"
             variant="bordered"
             placeholder="Enter your email"
             className=" mb-5"
-           
+            onChange={(e) => setMsgEmail(e.target.value)}
           />
-          <Textarea placeholder="Type here..." rows={20} />
-         
+          <Textarea
+            placeholder="Type here..."
+            rows={20}
+            onChange={(e) => setMsgText(e.target.value)}
+          />
           {printError(msgError)}
-          <Button color="primary" variant="ghost" className="mt-12"  onPress={(e)=>{submitEmail(e.target.value)}}>
+          <Button
+            color="primary"
+            variant="ghost"
+            className="mt-12"
+            onPress={submitEmail}
+            isLoading={submited}
+          >
             Submit
           </Button>
         </span>

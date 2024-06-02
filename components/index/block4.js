@@ -52,7 +52,7 @@ export const Index_block4 = (props) => {
   return (
     <div className=" grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 ">
       {certs.map((e, index) => (
-        <div className=" place-content-around flex">
+        <div key={index} className=" place-content-around flex">
           {index == 1 ? (
             e
           ) : (
