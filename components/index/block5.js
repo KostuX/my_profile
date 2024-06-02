@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
 import { printError } from "../../lib/helper/printError";
 import { validate } from "../../lib/helper/validator";
+var xss = require("xss");
 import {
   Facebook,
   GithubIcon,
@@ -47,7 +48,14 @@ export const Index_block5 = (props) => {
       headers: { "Content-type": "application/json" },
     });
     let res = await response.json();
-    let data = res;
+    if (res.ok) {
+      setSubmited(false);
+      setMsgEmail("");
+      setMsgText("");
+      setMsgError(["Sent!"]);
+    } else {
+      setMsgError(["Unexpected error, please try again..."]);
+    }
   }
 
   return (
@@ -61,6 +69,7 @@ export const Index_block5 = (props) => {
             size="sm"
             label="Email"
             variant="bordered"
+            value={msgEmail}
             placeholder="Enter your email"
             className=" mb-5"
             onChange={(e) => setMsgEmail(e.target.value)}
@@ -75,6 +84,7 @@ export const Index_block5 = (props) => {
             color="primary"
             variant="ghost"
             className="mt-12"
+            value={msgText}
             onPress={submitEmail}
             isLoading={submited}
           >

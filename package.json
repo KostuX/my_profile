@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
     "@google/model-viewer": "^3.5.0",
     "@nextui-org/navbar": "^2.0.30",
     "@nextui-org/react": "^2.3.6",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
     "@types/three": "^0.164.0",
+    "googleapis": "^105.0.0",
     "iron-session": "^6.0.2",
     "jsonwebtoken": "^9.0.2",
     "next": "14.2.3",
@@ -28,7 +30,8 @@
     "react-type-animation": "^3.2.0",
     "recharts": "^2.12.7",
     "sharp": "^0.33.4",
-    "validator": "^13.12.0"
+    "validator": "^13.12.0",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "@types/node": "20.12.8",

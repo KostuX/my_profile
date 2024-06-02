@@ -40,3 +40,9 @@
 535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-421386d84b7sm29730285e9.0 - gsmtp
 [ERROR] Sun, 02 Jun 2024 14:10:30 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
 535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-35dd04d943esm6259935f8f.47 - gsmtp
+[ERROR] Sun, 02 Jun 2024 16:15:43 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4212b8a6197sm88330915e9.37 - gsmtp
+[ERROR] Sun, 02 Jun 2024 16:16:35 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-4212b8a4c88sm88144015e9.31 - gsmtp
+[ERROR] Sun, 02 Jun 2024 16:18:07 GMT - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-35dd04c0d6csm6549025f8f.1 - gsmtp
