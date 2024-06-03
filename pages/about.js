@@ -1,15 +1,15 @@
-import DefaultLayout from "../layouts/default";
+import React, { useEffect, useCallback } from "react";
 
-export default function Home() {
+import EmblaCarousel2 from "../components/emblaCarousel/Embla";
+import Autoplay from "embla-carousel-autoplay";
+
+export default function EmblaCarousel() {
+  const OPTIONS = { loop: true };
+  const OPTIONS2 = [Autoplay({ delay: 2000 })];
+  const SLIDE_COUNT = 5;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
   return (
-    <DefaultLayout>
-      <div className="justify-between h-full text-center ">
-        <div className="border  m-5  border-theme_secondary">About Page</div>
-        <span className="grid grid-cols-2 gap-4  m-3 h-56 ">
-          <span className="border  border-theme_secondary">Left Panel</span>
-          <span className="border  border-theme_secondary">Right Panel</span>
-        </span>
-      </div>
-    </DefaultLayout>
+    <EmblaCarousel2 slides={SLIDES} options={OPTIONS} options2={OPTIONS2} />
   );
 }
