@@ -2,10 +2,11 @@ import DefaultLayout from "../layouts/default";
 import { withIronSessionSsr } from "iron-session/next";
 import { ironOptions } from "../config/session/session_config";
 import { Project_IPFS } from "../components/projects/projectIPFS";
+import { Project_monTool } from "../components/projects/projectMonTool";
 import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
-  let content = [<Project_IPFS />];
+  let content = [<Project_IPFS />, <Project_monTool />];
 
   return (
     <DefaultLayout>
@@ -20,7 +21,7 @@ export default function Home({ data }) {
             <Project_IPFS />
           </Tab>
           <Tab key="monTool" title="monTool">
-            2
+            <Project_monTool />
           </Tab>
         </Tabs>
       </div>
