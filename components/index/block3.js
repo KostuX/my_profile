@@ -107,25 +107,25 @@ const qq8 = [
 
   {
     subject: "Final Year Project",
-    A: 0,
+    A: 81,
   },
 
   {
     subject: "Text Analysis",
-    A: 0,
+    A: 72,
   },
   {
     subject: "Web Services",
-    A: 0,
+    A: 94,
   },
   {
     subject: "Computer Vision",
-    A: 0,
+    A: 73,
   },
 
   {
     subject: "Computtational Intelligence",
-    A: 0,
+    A: 75,
   },
 ];
 
@@ -134,7 +134,7 @@ const charts = [
     title: "Bachelor of Science (Honours) in ",
     subTitle: "Computing in Information Technology (Level 8)",
     chart: <Chart data={qq8} />,
-    avg: 70,
+    avg: 80,
   },
   {
     title: "Advanced Certificate (QQI Level 6)",
