@@ -1,4 +1,5 @@
 import { arangeHex } from "../../lib/helper/hexarange";
+
 export const Index_block2 = (props) => {
   return (
     <div className="h-screen text-center">
@@ -16,9 +17,7 @@ export const Index_block2 = (props) => {
         </span>
       </span>
 
-      <div className="sm:flex sm:flex-wrap sm:mx-56 sm:justify-center">
-        {arangeHex(3)}
-      </div>
+      <div className="  ">{arangeHex()}</div>
 
       <span className="hidden sm:flex grid grid-cols-1 gap-4 m-10">
         <div className="row-span-1 flex">
