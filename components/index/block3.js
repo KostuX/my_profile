@@ -192,7 +192,7 @@ export const Index_block3 = (props) => {
             Maintained a high GPA throughout my academic career, demonstrating
             strong dedication and intellectual capability. Awarded "Student of
             the Year" for exemplary performance during studies. Graduated with
-            [Honors/Distinction], recognized for outstanding academic
+            First Class Honours, recognized for outstanding academic
             achievements and commitment to excellence.
           </h3>
         </span>
