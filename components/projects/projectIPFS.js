@@ -62,33 +62,28 @@ export const Project_IPFS = (props) => {
             <b>Purpose:</b> Web-based gateway to distributed (IPFS) network
           </div>
           <div className="mt-6">
-            User-friendly gateway to IPFS network. It act as a bridge from WEB
-            2.0 to WEB 3.0. Project hides all the complexity of the
-            decentralised networks and provide service similar to centralised
-            systems with which users are more familiar. IPFS gateway allow users
-            to transfer larger files compared to other most commonly used
-            solutions such messengers or emails, and reduce the complexity
-            compared to sharing over cloud storage. Since IPFS is a public
-            network, sharing files privately may require a slightly different
-            solution - file encryption may restrict others from viewing the
-            content. Ip-fs.cloud probably the fastest way to share a file
-            between one or many people at the same time. All you need to do is
-            add a reference to a file to a ”Public Wall” from where anyone could
-            access it. The ability to stream video files directly from IPFS
-            network also available. Users can upload videos from their phones
-            and almost immediately play them on TV or other devices that support
-            WEB browsers with built-in HTML5 player. Apart from adding
-            simplicity in the adaption of distributed networks, we should not
-            forget that this is one step stone in possibly the most significant
-            change in technologies since WEB2. Decentralised systems are much
-            more efficient- fewer expenses for business, and since data is
-            transferred directly (P2P), less energy is wasted, which makes it
-            beneficial to our ecosystem. Since IPFS is a decentralized network
-            consisting of a distributed file 4 system, no central entity becomes
-            a choke point to serve all requests for content. Instead, any node
-            in the P2P network that has the content cached can serve it. This
-            torrent-like file share, where peer downloads files from multiple
-            users concurrently, speeds up the process.
+            User-friendly Gateway to the IPFS Network. My project acts as a
+            bridge from Web 2.0 to Web 3.0, simplifying the complexities of
+            decentralized networks. It offers a service similar to centralized
+            systems, making it more familiar to users. The IPFS gateway allows
+            users to transfer larger files compared to common solutions like
+            messengers or emails and reduces the complexity of sharing over
+            cloud storage. For private sharing, file encryption can restrict
+            unauthorized viewing since IPFS is a public network. Ip-fs.cloud is
+            probably the fastest way to share files between multiple people
+            simultaneously. Users only need to add a file reference to a "Public
+            Wall" for public access. The gateway also supports video streaming
+            directly from the IPFS network, enabling users to upload videos from
+            their phones and play them almost immediately on any HTML5-capable
+            web browser. Apart from simplifying the adoption of distributed
+            networks, this represents a significant technological shift since
+            Web 2.0. Decentralized systems are more efficient, reduce business
+            expenses, and waste less energy due to direct peer-to-peer data
+            transfer, benefiting our ecosystem. IPFS, as a decentralized network
+            with a distributed file system, avoids central choke points. Any
+            node with the content cached can serve it, enabling torrent-like
+            file sharing where peers download files from multiple sources
+            concurrently, speeding up the process.
           </div>
         </div>
       </div>
