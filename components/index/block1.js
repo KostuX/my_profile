@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 export const Index_block1 = (props) => {
   return (
-    <div className="h-screen " {...props}>
+    <div className="" {...props}>
       <span className="grid sm:grid-cols-3 gap-4 justify-evenly">
         <span className="hidden  sm:m-10 sm:flex">
           <div className=" justify-start " style={{ height: "100%" }}>

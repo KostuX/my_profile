@@ -182,7 +182,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="h-screen ">
+    <div className=" ">
       <span className=" text-xl grid sm:grid-cols-3 gap-4 justify-evenly">
         <span></span>
         <span className="text-xl text-center">
