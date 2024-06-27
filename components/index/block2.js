@@ -2,7 +2,7 @@ import { arangeHex } from "../../lib/helper/hexarange";
 
 export const Index_block2 = (props) => {
   return (
-    <div className="text-center">
+    <div className="text-center ">
       <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 justify-evenly">
         <span></span>
         <span>
