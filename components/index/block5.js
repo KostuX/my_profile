@@ -62,11 +62,12 @@ export const Index_block5 = (props) => {
   }
 
   return (
-    <div className="h-screen mt-24 text-center  text-xl">
+    <div className="flex items-center justify-center ">
+    <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
       <h1 className="mb-5 ">【Contact】</h1>
-      <span className="mx-12  grid sm:grid-cols-3 gap-4">
-        <span></span>
-        <span className=" justify-center h-1/2">
+      <span className="">
+       
+        <span className=" ">
           <span className="text-pink-500"></span>{" "}
           <Input
             size="sm"
@@ -101,9 +102,9 @@ export const Index_block5 = (props) => {
             Submit
           </Button>
         </span>
-        <span></span>
+      
       </span>
-      <span className="text-default-500 justify-center sm:flex m-12 ">
+      <span className="text-default-500 justify-center xl:flex m-12 ">
         <NextLink href={cfg.links.github} aria-label="Github">
           <span className="flex  sm:m-12">
             <GithubIcon />
@@ -135,6 +136,7 @@ export const Index_block5 = (props) => {
           </span>
         </NextLink>
       </span>
+    </div>
     </div>
   );
 };
