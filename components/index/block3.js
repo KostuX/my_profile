@@ -51,12 +51,10 @@ const qq7 = [
   {
     subject: "Project Skills",
     A: 70,
-    fullMark: 100,
   },
   {
     subject: "Advanced Switching & Routing",
     A: 74,
-    fullMark: 100,
   },
 
   {
@@ -79,7 +77,6 @@ const qq7 = [
   {
     subject: "Rich Web Applications",
     A: 98,
-    fullMark: 100,
   },
 ];
 
