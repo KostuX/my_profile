@@ -12,6 +12,7 @@ export default function Home({ data }) {
   return (
     <DefaultLayout>
       <div className=" ">
+        <div className="w-screen bg-red-500 text-center">Please note that our projects have been parked and moved to low-end devices. As a result, they may not be fully functional. </div>
         <Tabs
           key="secondary"
           color="secondary"
