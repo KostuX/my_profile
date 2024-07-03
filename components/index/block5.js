@@ -62,7 +62,7 @@ export const Index_block5 = (props) => {
   }
 
   return (
-    <div className="flex items-center justify-center ">
+    <div className="flex items-center justify-center mt-16 ">
     <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
       <h1 className="mb-5 ">【Contact】</h1>
       <span className="">
