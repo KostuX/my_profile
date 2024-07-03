@@ -30,9 +30,9 @@ export const Index_block2 = (props) => {
           <ul className="max-w-56 "> Web-App: NodeJS, NextJS, Symfony</ul>
           <ul className="max-w-56 ">Database: CocroachDB, MongoDB, MySQL</ul>
           <ul className="max-w-56 ">
-            AI/ML: TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks,{" "}
+            AI/ML: TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks{" "}
           </ul>
-          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, Swager </ul>
+          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, FastAPI Swager </ul>
         </div>
       </span>
     </div>
