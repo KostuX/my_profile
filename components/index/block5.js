@@ -106,19 +106,19 @@ export const Index_block5 = (props) => {
       </span>
       <span className="text-default-500 justify-center xl:flex m-12 ">
         <NextLink href={cfg.links.github} aria-label="Github">
-          <span className="flex  sm:m-12">
+          <span className="flex  sm:m-4">
             <GithubIcon />
             https://github.com/KostuX
           </span>
         </NextLink>
         <NextLink href={cfg.links.github2} aria-label="Github">
-          <span className="flex  sm:m-12">
+          <span className="flex  sm:m-4">
             <GithubIcon />
             https://github.com/Kostas9999
           </span>
         </NextLink>
         <NextLink href={cfg.links.facebook} aria-label="Facebook">
-          <span className="flex sm:m-12">
+          <span className="flex sm:m-4">
             <Facebook />
             https://www.facebook.com/KostuX/
           </span>
@@ -130,7 +130,7 @@ export const Index_block5 = (props) => {
           }
           aria-label="Email"
         >
-          <span className="flex  sm:m-12">
+          <span className="flex  sm:m-4">
             <Email />
             goldiskiker@gmail.com
           </span>
