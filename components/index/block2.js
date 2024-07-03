@@ -19,20 +19,20 @@ export const Index_block2 = (props) => {
 
       <div className="  ">{arangeHex()}</div>
 
-      <span className="hidden sm:flex grid grid-cols-1 gap-4 m-10">
-        <div className="row-span-1 flex">
-          <ul>Programming languages: Java, JavaScript, PHP, Python</ul>
-          <ul>
+      <span className="hidden sm:flex grid grid-cols-1 gap-4 m-12 justify-center ">
+        <div className="row-span-1 flex ">
+          <ul className="max-w-56 ">Programming languages: Java, JavaScript, PHP, Python</ul>
+          <ul className="max-w-56 ">
             Deployment: AWS, DigitalOcean, Linux, Nginx, Docker, PM2, Grafana,
             Jenkins
           </ul>
 
-          <ul> Web-App: NodeJS, NextJS, Symfony</ul>
-          <ul>Database: CocroachDB, MongoDB, MySQL</ul>
-          <ul>
+          <ul className="max-w-56 "> Web-App: NodeJS, NextJS, Symfony</ul>
+          <ul className="max-w-56 ">Database: CocroachDB, MongoDB, MySQL</ul>
+          <ul className="max-w-56 ">
             AI/ML: TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks,{" "}
           </ul>
-          <ul>Other: Git, RabbitMQ, FireBase, RestAPI, Swager </ul>
+          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, Swager </ul>
         </div>
       </span>
     </div>
