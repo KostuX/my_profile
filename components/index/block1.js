@@ -57,7 +57,7 @@ export const Index_block1 = (props) => {
             AI/ML, data & text analytics, software engineering, and web
             front-end development.
           </h3>
-          <div className="grid  place-items-center mt-5">
+          <div className="grid  place-items-center  mt-5 ">
             <img src="/programming_.svg" height={50} width={50} />
           </div>
         </span>

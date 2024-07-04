@@ -3,7 +3,7 @@ import { arangeHex } from "../../lib/helper/hexarange";
 export const Index_block2 = (props) => {
   return (
     <div className="text-center ">
-      <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 justify-evenly">
+      <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 ">
         <span></span>
         <span>
           <h1 className="mb-5">【My tools】</h1>
@@ -32,7 +32,7 @@ export const Index_block2 = (props) => {
           <ul className="max-w-56 ">
             AI/ML: TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks{" "}
           </ul>
-          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, FastAPI Swager </ul>
+          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, FastAPI, Swager </ul>
         </div>
       </span>
     </div>
