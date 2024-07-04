@@ -2,10 +2,10 @@ import DefaultLayout from "../layouts/default";
 import { withIronSessionSsr } from "iron-session/next";
 import { ironOptions } from "../config/session/session_config";
 import { Index_block1 } from "../components/index/block1";
-import { Index_block2 } from "../components/index/block2";
-import { Index_block3 } from "../components/index/block3";
-import { Index_block4 } from "../components/index/block4";
-import { Index_block5 } from "../components/index/block5";
+import { Index_block2 } from "../components/index/tools";
+import { Index_block3 } from "../components/index/education";
+import { Index_block4 } from "../components/index/certificates";
+import { Index_block5 } from "../components/index/contact";
 
 import React, { useState, useEffect } from "react";
 

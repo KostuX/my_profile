@@ -12,7 +12,7 @@ import {
   DiscordIcon,
   HeartFilledIcon,
   Email,
-} from "../../components/icons";
+} from "../icons";
 export const Index_block5 = (props) => {
   const [msgText, setMsgText] = useState("");
   const [msgEmail, setMsgEmail] = useState("");
