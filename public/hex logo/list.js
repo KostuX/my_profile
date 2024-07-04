@@ -1,7 +1,7 @@
 export default function list() {
   return [
     "aws.png",
-    "cockroachdb.png",
+    "cockroachDB.png",
     "digitalOcean.png",
     "docker.png",
     "firebase.png",
