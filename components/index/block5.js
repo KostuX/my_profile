@@ -120,7 +120,7 @@ export const Index_block5 = (props) => {
         <NextLink href={cfg.links.facebook} aria-label="Facebook">
           <span className="flex sm:m-4">
             <Facebook />
-            https://www.facebook.com/KostuX/
+            https://www.facebook.com/KostuX
           </span>
         </NextLink>
 
