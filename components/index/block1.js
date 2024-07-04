@@ -54,7 +54,7 @@ export const Index_block1 = (props) => {
           <h3>
             I'm a Software and Web App Developer with experience in designing,
             developing, and maintaining robust applications. I have skills in
-            AI/ML, data & text analytics, software engineering, and web
+            AI/ML, data & text analytics, software engineering, and web back-end and
             front-end development.
           </h3>
           <div className="grid  place-items-center  mt-5 ">
