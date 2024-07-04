@@ -94,7 +94,7 @@ export const Index_block5 = (props) => {
           <Button
             color="primary"
             variant="ghost"
-            className="mt-12"
+            className="m-12"
             value={msgText}
             onPress={submitEmail}
             isLoading={submited}
