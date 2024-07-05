@@ -15,7 +15,7 @@ export const Index_block1 = (props) => {
   },[])
   
   return (
-    <div className="xl:h-screen " {...props}>
+    <div className="mb-56 xl:mb-1 xl:h-screen " {...props}>
       <span className="grid xl:grid-cols-3 gap-4 justify-evenly">
         <span className="hidden  xl:m-10 xl:flex">
           <div className=" justify-start " style={{ height: "100%" }}>
