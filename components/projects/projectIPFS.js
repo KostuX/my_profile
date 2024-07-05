@@ -87,10 +87,14 @@ export const Project_IPFS = (props) => {
           </div>
         </div>
       </div>
-      <div className="h-screen border mt-56">
+
+
+
+      
+      <div className="h-screen border md:m-24">
         {" "}
-        <div>Page preview</div>
-        <iframe src="https://ip-fs.cloud" width="100%" height="100%"></iframe>
+        <div className="text-center">Page preview</div>
+        <iframe  src="https://ip-fs.cloud" width="100%" height="100%"></iframe>
       </div>
     </>
   );
