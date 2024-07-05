@@ -63,7 +63,7 @@ export const Index_block4 = (props) => {
     }})
   },[])
   return (
-    <div className=" grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52 " ref={text}>
+    <div className="xl:min-h-screen grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52 " ref={text}>
       {certs.map((e, index) => (
         <div key={index} className=" place-content-around flex">
           {index == 1 ? (
