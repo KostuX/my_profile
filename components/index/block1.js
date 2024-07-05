@@ -15,9 +15,9 @@ export const Index_block1 = (props) => {
   },[])
   
   return (
-    <div className="h-screen" {...props}>
-      <span className="grid sm:grid-cols-3 gap-4 justify-evenly">
-        <span className="hidden  sm:m-10 sm:flex">
+    <div className="h-screen " {...props}>
+      <span className="grid xl:grid-cols-3 gap-4 justify-evenly">
+        <span className="hidden  xl:m-10 xl:flex">
           <div className=" justify-start " style={{ height: "100%" }}>
             <h1>
               <TypeAnimation
@@ -75,7 +75,7 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span className=" fixed sm:relative opacity-25 sm:opacity-100 ">
+        <span className=" fixed xl:relative opacity-25 xl:opacity-100 ">
           <model-viewer
             style={{
               height: "100vh",

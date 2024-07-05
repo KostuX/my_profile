@@ -2,14 +2,13 @@
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
 
 import  gsap from "gsap";
-import {useGSAP} from '@gsap/react'
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 
 gsap.registerPlugin(ScrollTrigger)
 
 
-//gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
+
 
 function App() {
   const main = useRef(null);
