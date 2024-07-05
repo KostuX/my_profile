@@ -2,6 +2,12 @@ import React, { PureComponent, useState } from "react";
 import { Chart } from "./radarChart/radarChart";
 import { progressBar } from "../progressBar";
 
+import { useRef, useEffect } from "react";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 import {
   Radar,
   RadarChart,
@@ -152,6 +158,15 @@ export const Index_block3 = (props) => {
   const [paused, setPaused] = useState(false);
   let paused_ = false;
 
+
+  const text = useRef(null);
+  useEffect(()=>{    
+    const el = text.current
+    gsap.fromTo(el, {opacity:0},{opacity:1, duration:3, scrollTrigger:{
+        trigger:el
+    }})
+  },[])
+
   const nextItem = () => {
     setActiveIndex(
       (prevIndex) => (prevIndex + 1 + charts.length) % charts.length
@@ -179,7 +194,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="h-screen   ">
+    <div className="h-screen   " ref={text}>
       <span className=" text-xl grid sm:grid-cols-3 gap-4 justify-evenly ">
         <span></span>
         <span className="text-xl text-center">

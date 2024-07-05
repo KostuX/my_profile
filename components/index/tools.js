@@ -1,8 +1,24 @@
 import { arangeHex } from "../../lib/helper/hexarange";
+import { useRef, useEffect } from "react";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
+
+
+ 
 
 export const Index_block2 = (props) => {
+  const text = useRef(null);
+  useEffect(()=>{    
+    const el = text.current
+    gsap.fromTo(el, {opacity:0},{opacity:1, duration:2, scrollTrigger:{
+        trigger:el
+    }})
+  },[])
   return (
-    <div className="text-center ">
+    <div className="text-center  " ref={text}>
       <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 ">
         <span></span>
         <span>

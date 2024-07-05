@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,useRef} from "react";
 import { Input, Textarea, Button } from "@nextui-org/react";
 import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
 import { printError } from "../../lib/helper/printError";
 import { validate } from "../../lib/helper/validator";
 import validator from "validator";
+
+
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
+
+
 var xss = require("xss");
 import {
   Facebook,
@@ -14,10 +23,19 @@ import {
   Email,
 } from "../icons";
 export const Index_block5 = (props) => {
+
   const [msgText, setMsgText] = useState("");
   const [msgEmail, setMsgEmail] = useState("");
   const [msgError, setMsgError] = useState([]);
   const [submited, setSubmited] = useState(false);
+
+  const text = useRef(null);
+  useEffect(()=>{    
+    const el = text.current
+    gsap.fromTo(el, {opacity:0},{opacity:1, duration:2, scrollTrigger:{
+        trigger:el
+    }})
+  },[])
 
   function submitEmail() {
     let err = [];
@@ -42,6 +60,9 @@ export const Index_block5 = (props) => {
   }
 
   async function sendEmail() {
+
+
+
     let endpoint = "/api/contactEmailAPI";
     let api_data = { data: { email: msgEmail, text: msgText } };
 
@@ -62,7 +83,7 @@ export const Index_block5 = (props) => {
   }
 
   return (
-    <div className="flex items-center justify-center mt-16 ">
+    <div className="flex items-center justify-center mt-16 " ref={text}>
       <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
         <h1 className="mb-5 ">【Contact】</h1>
         <span className="">

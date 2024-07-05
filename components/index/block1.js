@@ -1,8 +1,21 @@
-import React from "react";
+import React ,{useEffect,useRef}from "react";
 import { TypeAnimation } from "react-type-animation";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
+
 export const Index_block1 = (props) => {
+  const text = useRef(null);
+  useEffect(()=>{    
+    const el = text.current
+    gsap.fromTo(el, {opacity:0},{opacity:1, duration:1, scrollTrigger:{
+        trigger:el
+    }})
+  },[])
+  
   return (
-    <div className="" {...props}>
+    <div className="h-screen" {...props}>
       <span className="grid sm:grid-cols-3 gap-4 justify-evenly">
         <span className="hidden  sm:m-10 sm:flex">
           <div className=" justify-start " style={{ height: "100%" }}>
@@ -47,7 +60,7 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span className="m-12 sm:mt-52    bg-theme_secondary-950 border-theme_secondary text-xl  text-center">
+        <span ref={text} className="m-12 sm:mt-52  opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center">
           <h1>My name is</h1>
           <h1>【Konstantinas】</h1>
           <h3 className="mb-5">But you can call me Kostas.</h3>

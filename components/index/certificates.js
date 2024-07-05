@@ -1,3 +1,9 @@
+import { useRef, useEffect } from "react";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 const textContent = (
   <span className="text-xl text-center">
     <h1 className="mb-5">【Certificates】</h1>
@@ -49,8 +55,15 @@ const certs = [
 ];
 
 export const Index_block4 = (props) => {
+  const text = useRef(null);
+  useEffect(()=>{    
+    const el = text.current
+    gsap.fromTo(el, {opacity:0},{opacity:1, duration:2, scrollTrigger:{
+        trigger:el
+    }})
+  },[])
   return (
-    <div className=" grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52">
+    <div className=" grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52 " ref={text}>
       {certs.map((e, index) => (
         <div key={index} className=" place-content-around flex">
           {index == 1 ? (
