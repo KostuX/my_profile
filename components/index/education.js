@@ -194,7 +194,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="h-screen   " ref={text}>
+    <div className="min-h-screen" ref={text}>
       <span className=" text-xl grid xl:grid-cols-3 gap-4 justify-evenly ">
         <span></span>
         <span className="text-xl text-center">
