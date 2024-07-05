@@ -18,7 +18,7 @@ export const Index_block2 = (props) => {
     }})
   },[])
   return (
-    <div className="text-center  " ref={text}>
+    <div className="text-center h-screen  " ref={text}>
       <span className="  border-theme_secondary text-xl sm:grid grid-cols-3 gap-4 ">
         <span></span>
         <span>
