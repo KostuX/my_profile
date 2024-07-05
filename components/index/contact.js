@@ -63,80 +63,78 @@ export const Index_block5 = (props) => {
 
   return (
     <div className="flex items-center justify-center mt-16 ">
-    <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
-      <h1 className="mb-5 ">【Contact】</h1>
-      <span className="">
-       
-        <span className=" ">
-          <span className="text-pink-500"></span>{" "}
-          <Input
-            size="sm"
-            label="Email"
-            variant="bordered"
-            value={msgEmail}
-            placeholder="Enter your email"
-            className=" mb-5"
-            maxLength={128}
-            onChange={(e) => setMsgEmail(e.target.value)}
-          />
-          <span className="flex">
-            <Textarea
-              placeholder="Type here..."
-              rows={20}
-              maxLength={512}
-              onChange={(e) => setMsgText(e.target.value)}
+      <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
+        <h1 className="mb-5 ">【Contact】</h1>
+        <span className="">
+          <span className=" ">
+            <span className="text-pink-500"></span>{" "}
+            <Input
+              size="sm"
+              label="Email"
+              variant="bordered"
+              value={msgEmail}
+              placeholder="Enter your email"
+              className=" mb-5"
+              maxLength={128}
+              onChange={(e) => setMsgEmail(e.target.value.trim())}
             />
-            <span className="text-xs place-self-end ">
-              {msgText.length != 0 ? 512 - msgText.length : ""}
+            <span className="flex">
+              <Textarea
+                placeholder="Type here..."
+                rows={20}
+                maxLength={512}
+                onChange={(e) => setMsgText(e.target.value)}
+              />
+              <span className="text-xs place-self-end ">
+                {msgText.length != 0 ? 512 - msgText.length : ""}
+              </span>
             </span>
+            {printError(msgError)}
+            <Button
+              color="primary"
+              variant="ghost"
+              className="m-12"
+              value={msgText}
+              onPress={submitEmail}
+              isLoading={submited}
+            >
+              Submit
+            </Button>
           </span>
-          {printError(msgError)}
-          <Button
-            color="primary"
-            variant="ghost"
-            className="m-12"
-            value={msgText}
-            onPress={submitEmail}
-            isLoading={submited}
-          >
-            Submit
-          </Button>
         </span>
-      
-      </span>
-      <span className="text-default-500 justify-center xl:flex m-12 ">
-        <NextLink href={cfg.links.github} aria-label="Github">
-          <span className="flex  sm:m-4">
-            <GithubIcon />
-            https://github.com/KostuX
-          </span>
-        </NextLink>
-        <NextLink href={cfg.links.github2} aria-label="Github">
-          <span className="flex  sm:m-4">
-            <GithubIcon />
-            https://github.com/Kostas9999
-          </span>
-        </NextLink>
-        <NextLink href={cfg.links.facebook} aria-label="Facebook">
-          <span className="flex sm:m-4">
-            <Facebook />
-            https://www.facebook.com/KostuX
-          </span>
-        </NextLink>
+        <span className="text-default-500 justify-center xl:flex m-12 ">
+          <NextLink href={cfg.links.github} aria-label="Github">
+            <span className="flex  sm:m-4">
+              <GithubIcon />
+              https://github.com/KostuX
+            </span>
+          </NextLink>
+          <NextLink href={cfg.links.github2} aria-label="Github">
+            <span className="flex  sm:m-4">
+              <GithubIcon />
+              https://github.com/Kostas9999
+            </span>
+          </NextLink>
+          <NextLink href={cfg.links.facebook} aria-label="Facebook">
+            <span className="flex sm:m-4">
+              <Facebook />
+              https://www.facebook.com/KostuX
+            </span>
+          </NextLink>
 
-        <NextLink
-          href={
-            "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"
-          }
-          aria-label="Email"
-        >
-          <span className="flex  sm:m-4">
-            <Email />
-            goldiskiker@gmail.com
-          </span>
-        </NextLink>
-      </span>
-    </div>
+          <NextLink
+            href={
+              "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"
+            }
+            aria-label="Email"
+          >
+            <span className="flex  sm:m-4">
+              <Email />
+              goldiskiker@gmail.com
+            </span>
+          </NextLink>
+        </span>
+      </div>
     </div>
   );
 };

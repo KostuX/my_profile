@@ -11,8 +11,8 @@ export default withIronSessionApiRoute(test, ironOptions);
 
 async function test(req, res) {
   let data = req.body.data;
-  data.email = validator.escape(data.email);
-  data.text = validator.escape(data.text);
+  data.email = validator.escape(data.email).trim();
+  data.text = validator.escape(data.text).trim();
 
   let err = [];
 
