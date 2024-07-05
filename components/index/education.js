@@ -194,7 +194,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-56 xl:mb-1 xl:h-screen   " ref={text}>
+    <div className="mb-56 xl:mb-1 xl:h-screen h-screen   " ref={text}>
       <span className=" text-xl grid xl:grid-cols-3 gap-4 justify-evenly ">
         <span></span>
         <span className="text-xl text-center">
