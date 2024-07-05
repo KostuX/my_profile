@@ -83,8 +83,8 @@ export const Index_block5 = (props) => {
   }
 
   return (
-    <div className="flex items-center justify-center mt-16 " ref={text}>
-      <div className="h-screen mx-24  text-center  text-xl max-w-xl  ">
+    <div className="flex items-center justify-center mt-16 h-screen " ref={text}>
+      <div className="mx-24  text-center  text-xl max-w-xl  ">
         <h1 className="mb-5 ">【Contact】</h1>
         <span className="">
           <span className=" ">
@@ -123,7 +123,7 @@ export const Index_block5 = (props) => {
             </Button>
           </span>
         </span>
-        <span className="text-default-500 justify-center xl:flex m-12 ">
+        <span className="text-default-500 justify-center xl:flex m-12 place-content-end">
           <NextLink href={cfg.links.github} aria-label="Github">
             <span className="flex  sm:m-4">
               <GithubIcon />
