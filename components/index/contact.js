@@ -136,13 +136,14 @@ export const Index_block5 = (props) => {
               https://github.com/Kostas9999
             </span>
           </NextLink>
+          {/*}
           <NextLink href={cfg.links.facebook} aria-label="Facebook">
             <span className="flex sm:m-4">
               <Facebook />
               https://www.facebook.com/KostuX
             </span>
           </NextLink>
-
+          {*/}
           <NextLink
             href={
               "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"
