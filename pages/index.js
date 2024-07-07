@@ -11,7 +11,7 @@ import React, { useEffect } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 let content = [
   <Index_block1 />,
@@ -72,6 +72,7 @@ export default function Home({ data }) {
     </DefaultLayout>
   );
 }
+
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
     let endpoint = "http:/localhost:3000/api/hello";

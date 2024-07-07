@@ -87,15 +87,44 @@ export const Project_IPFS = (props) => {
           </div>
         </div>
       </div>
+      <div className="w-screen mt-56  justify-center text-center font-extrabold text-xl">
+        Top view
+      </div>
+      <div className="w-screen md:grid md:grid-cols-2 ">
+        <div className="mx-4 m-24 ">
+          <div className="text-center "> System Design</div>
+          <div className=" flex justify-center">
+            {" "}
+            <img
+              src="systemDesign.png"
+              alt="System Design"
+              width="90%"
+              height="100%"
+            />{" "}
+          </div>
+        </div>
+        <div className="mx-4 m-24 ">
+          <div className="text-center"> Database Design</div>
+          <div className=" flex justify-center">
+            {" "}
+            <img
+              src="dbDesign.png"
+              alt="Database Design"
+              width="90%"
+              height="100%"
+            />{" "}
+          </div>
+        </div>
+      </div>
 
-
-
-      
+      {/*}
       <div className="h-screen border md:m-24">
         {" "}
         <div className="text-center">Page preview</div>
         <iframe  src="https://ip-fs.cloud" width="100%" height="100%"></iframe>
       </div>
+
+      {*/}
     </>
   );
 };
