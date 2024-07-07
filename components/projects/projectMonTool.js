@@ -92,12 +92,8 @@ export const Project_monTool = (props) => {
       </div>
       <div className="h-screen border md:m-24">
         {" "}
-        <div className="text-center">Page preview</div>
-        <iframe
-          src="https://montool.vercel.app/"
-          width="100%"
-          height="100%"
-        ></iframe>
+        <div className="text-center"></div>
+       
       </div>
     </>
   );
