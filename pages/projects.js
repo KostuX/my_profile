@@ -4,6 +4,7 @@ import { ironOptions } from "../config/session/session_config";
 import { Project_IPFS } from "../components/projects/projectIPFS";
 import { Project_monTool } from "../components/projects/projectMonTool";
 import { Project_drone } from "../components/projects/projectDrone";
+import {Project_huffman} from "../components/projects/algorithms/huffman/huffman";
 import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
@@ -28,6 +29,21 @@ export default function Home({ data }) {
           </Tab>
           <Tab key="drone" title="Drone (game)">
             <Project_drone />
+          </Tab>
+          <Tab key="huffman" title="huffman" isDisabled>
+            <Project_huffman />
+          </Tab>
+          <Tab key="COVID" title="Covid-19 simulator" isDisabled>
+            <Project_huffman />
+          </Tab>
+          <Tab key="genAlgo" title="Genetic Algorithm" isDisabled>
+            <Project_huffman />
+          </Tab>
+          <Tab key="ADAline" title="ADAline" isDisabled>
+            <Project_huffman />
+          </Tab>
+          <Tab key="paterns" title="Paterns" isDisabled>
+            <Project_huffman />
           </Tab>
         </Tabs>
       </div>
