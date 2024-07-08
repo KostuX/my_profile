@@ -4,7 +4,7 @@ import { ironOptions } from "../config/session/session_config";
 import { Project_IPFS } from "../components/projects/projectIPFS";
 import { Project_monTool } from "../components/projects/projectMonTool";
 import { Project_drone } from "../components/projects/projectDrone";
-import {Project_huffman} from "../components/projects/algorithms/huffman/huffman";
+import { Project_huffman } from "../components/projects/algorithms/huffman/huffman";
 import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
@@ -13,7 +13,10 @@ export default function Home({ data }) {
   return (
     <DefaultLayout>
       <div className=" ">
-        <div className="w-screen bg-red-500 text-center">Please note that my projects have been parked and moved to low-end devices. As a result, they may not be fully functional. </div>
+        <div className="w-screen bg-red-500 text-center">
+          Please note that my projects have been parked and moved to low-end
+          devices. As a result, they may not be fully functional.{" "}
+        </div>
         <Tabs
           key="secondary"
           color="secondary"
@@ -30,7 +33,7 @@ export default function Home({ data }) {
           <Tab key="drone" title="Drone (game)">
             <Project_drone />
           </Tab>
-          <Tab key="huffman" title="huffman" isDisabled>
+          <Tab key="huffman" title="Huffman">
             <Project_huffman />
           </Tab>
           <Tab key="COVID" title="Covid-19 simulator" isDisabled>
