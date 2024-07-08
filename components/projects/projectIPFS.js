@@ -49,7 +49,7 @@ export const Project_IPFS = (props) => {
         </div>
         <div className="mt-12 sm:mt-2 sm:w-1/2 ">
           <div>
-            <b>Name:</b>{" "}
+            <b>Project:</b>{" "}
             <a href="https://ip-fs.cloud" target="_blank">
               {" "}
               ip-fs.cloud
@@ -87,7 +87,7 @@ export const Project_IPFS = (props) => {
           </div>
         </div>
       </div>
-      <div className="w-screen mt-56  justify-center text-center font-extrabold text-xl">
+      <div className="w-screen mt-52  justify-center text-center font-extrabold text-xl">
         Top view
       </div>
       <div className="w-screen md:grid md:grid-cols-2 ">

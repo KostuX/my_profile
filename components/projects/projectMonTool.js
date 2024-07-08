@@ -67,7 +67,7 @@ export const Project_monTool = (props) => {
         </div>
         <div className="mt-12 sm:mt-2 sm:w-1/2 ">
           <div>
-            <b>Name:</b>{" "}
+            <b>Project:</b>{" "}
             <a href="https://montool.vercel.app/" target="_blank">
               {" "}
               https://montool.vercel.app/
@@ -81,19 +81,51 @@ export const Project_monTool = (props) => {
             infrastructure)
           </div>
           <div className="mt-6">
-            Project contains 3 parts. 1. Application that is installed on
-            device/devices and collects all required data. Also it provides
-            communication channel which allows administrator remotely interact
-            with particular device. 2. Server - for processing data, storing in
-            database, communication intermeadian. 3. Website that provides an
-            administrator ability to monitore and control remote device/devices.
+            The aim of this project is to monitor network activities and inform
+            the administrator if any trackable or unexpected events occur. There
+            are three main parts to this project: an application on the computer
+            side, a controller, and a website to display collected data to the
+            administrator. The benefits of such an application are that it can
+            be installed on multiple devices and all collected data can be
+            displayed at a single point (the website). The website can be
+            accessible 24/7 from any part of the globe. All monitored devices
+            are displayed as a list. If a user prefers, email notifications can
+            be sent about events that have occurred. Additionally, users will
+            have some control over remote devices, such as closing applications
+            running on the device and shutting down or restarting computers. An
+            API endpoint will also be provided, so it can be easily integrated
+            into other applications.
           </div>
         </div>
       </div>
-      <div className="h-screen  md:m-24">
-        {" "}
-        <div className="text-center"></div>
-       
+      <div className="w-screen mt-52  justify-center text-center font-extrabold text-xl">
+        Top view
+      </div>
+      <div className="w-screen md:grid md:grid-cols-2 ">
+        <div className="mx-4 m-24 ">
+          <div className="text-center "> System Design</div>
+          <div className=" flex justify-center">
+            {" "}
+            <img
+              src="monTool/systemDesign.png"
+              alt="System Design"
+              width="90%"
+              height="100%"
+            />{" "}
+          </div>
+        </div>
+        <div className="mx-4 m-24 ">
+          <div className="text-center"> Database Design</div>
+          <div className=" flex justify-center">
+            {" "}
+            <img
+              src="monTool/dbDesign.png"
+              alt="Database Design"
+              width="90%"
+              height="100%"
+            />{" "}
+          </div>
+        </div>
       </div>
     </>
   );
