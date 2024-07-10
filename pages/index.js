@@ -22,24 +22,26 @@ let content = [
 ];
 
 export default function Home({ data }) {
+  useEffect(() => {
+     // get IP address
   async function getIP() {
     try {
       const response = await fetch("https://api.ipify.org?format=json");
       const data = await response.json();
-      return data.ip;
+
+      let data_add = {type:'add', data:{type:'connected', data:data.ip}}
+      await fetch('/api/LoggerAPI', {method:'POST', body:JSON.stringify(data_add), headers:{'Content-type':'application/json'}})  
+    
     } catch (error) {
       console.error("Error fetching the IP address:", error);
     }
   }
-  let ip = getIP().then((ip) => {
-    console.log(ip);
-  });
+getIP()
 
-  useEffect(() => {
-    // get IP address
-    const fetchIp = async () => {};
 
-    fetchIp();
+
+   
+   
 
     // scroll event listener
     addEventListener("scroll", (event) => {});
@@ -54,9 +56,7 @@ export default function Home({ data }) {
       }
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
-  }, []);
 
-  useEffect(() => {
     import("@google/model-viewer").catch(console.error);
     if (document) {
       const modelViewer = document.getElementById("3d_main");
@@ -94,19 +94,8 @@ export default function Home({ data }) {
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
-    let endpoint = "http:/localhost:3000/api/hello";
-    let api_data = { data: "test api" };
-
-    let response = await fetch(endpoint, {
-      method: "POST",
-      body: JSON.stringify(api_data),
-      headers: { "Content-type": "application/json" },
-    });
-    let res = await response.json();
-    let data = res;
-
     return {
-      props: { data },
+      props: {  },
     };
   },
 
