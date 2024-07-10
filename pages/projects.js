@@ -5,16 +5,43 @@ import { Project_IPFS } from "../components/projects/projectIPFS";
 import { Project_monTool } from "../components/projects/projectMonTool";
 import { Project_drone } from "../components/projects/projectDrone";
 import { Project_huffman } from "../components/projects/algorithms/huffman/huffman";
-import React from "react";
+import React, { useState } from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
+ 
   let content = [<Project_IPFS />, <Project_monTool />, <Project_drone />];
   let content_webApp =[<Project_IPFS />, <Project_monTool />, <Project_drone />];
 
+  const [content_state, setContent_state] = useState(content)
+  function tabs(tabs){
+    return(
+      <>
+      <Tabs
+        key="first"
+        color="secondary"
+        aria-label="App Type"
+        radius="full"
+        className="m-4 w-screen justify-center ">
+        {
+        tabs.map((e,i)=>(
+          <Tab key={i} title={e.title}>
+            
 
+</Tab>
+        ))}
+        
+      </Tabs>
+      
+      </>
+    )
+  }
+
+  let content_types = [{title:'WebApp', content:tabs(content_state)}]
 
   return (
     <DefaultLayout>
+     { tabs(content_types)}
+{/*}
       <div className=" ">
         <div className="w-screen bg-red-500 text-center">
           Please note that my projects have been parked and moved to low-end
@@ -81,6 +108,8 @@ export default function Home({ data }) {
        
         
       </div>
+
+      {*/}
     </DefaultLayout>
   );
 }
