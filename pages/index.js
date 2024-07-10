@@ -23,25 +23,26 @@ let content = [
 
 export default function Home({ data }) {
   useEffect(() => {
-     // get IP address
-  async function getIP() {
-    try {
-      const response = await fetch("https://api.ipify.org?format=json");
-      const data = await response.json();
+    // get IP address
+    async function getIP() {
+      try {
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
 
-      let data_add = {type:'add', data:{type:'connected', data:data.ip}}
-      await fetch('/api/LoggerAPI', {method:'POST', body:JSON.stringify(data_add), headers:{'Content-type':'application/json'}})  
-    
-    } catch (error) {
-      console.error("Error fetching the IP address:", error);
+        let data_add = {
+          type: "add",
+          data: { type: "connected", data: { ip: data.ip } },
+        };
+        fetch("/api/LoggerAPI", {
+          method: "POST",
+          body: JSON.stringify(data_add),
+          headers: { "Content-type": "application/json" },
+        });
+      } catch (error) {
+        console.error("Error fetching the IP address:", error);
+      }
     }
-  }
-getIP()
-
-
-
-   
-   
+    getIP();
 
     // scroll event listener
     addEventListener("scroll", (event) => {});
@@ -95,7 +96,7 @@ getIP()
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
     return {
-      props: {  },
+      props: {},
     };
   },
 
