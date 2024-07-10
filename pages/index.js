@@ -7,7 +7,7 @@ import { Index_block3 } from "../components/index/education";
 import { Index_block4 } from "../components/index/certificates";
 import { Index_block5 } from "../components/index/contact";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -22,7 +22,26 @@ let content = [
 ];
 
 export default function Home({ data }) {
+  async function getIP() {
+    try {
+      const response = await fetch("https://api.ipify.org?format=json");
+      const data = await response.json();
+      return data.ip;
+    } catch (error) {
+      console.error("Error fetching the IP address:", error);
+    }
+  }
+  let ip = getIP().then((ip) => {
+    console.log(ip);
+  });
+
   useEffect(() => {
+    // get IP address
+    const fetchIp = async () => {};
+
+    fetchIp();
+
+    // scroll event listener
     addEventListener("scroll", (event) => {});
     onscroll = (event) => {
       let lastScrollTop = 0;

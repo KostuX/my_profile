@@ -21,7 +21,7 @@ export function Project_huffman() {
   return (
     <>
       <div className=" sm:flex mx-5">
-        <div className="  mx-5 sm:w-1/2 bg-white-500">
+        <div className="flex mx-5 sm:w-1/2 justify-center ">
           <EmblaCarousel
             slides={SLIDES}
             options={OPTIONS}

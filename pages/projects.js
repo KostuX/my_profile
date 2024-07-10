@@ -22,7 +22,7 @@ export default function Home({ data }) {
           color="secondary"
           aria-label="Tabs colors"
           radius="full"
-          className="m-4 w-screen justify-center"
+          className="m-4 w-screen justify-center "
         >
           <Tab key="ip-fs.cloud" title="ip-fs.cloud">
             <Project_IPFS />
