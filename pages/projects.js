@@ -9,6 +9,9 @@ import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
   let content = [<Project_IPFS />, <Project_monTool />, <Project_drone />];
+  let content_webApp =[<Project_IPFS />, <Project_monTool />, <Project_drone />];
+
+
 
   return (
     <DefaultLayout>
@@ -17,10 +20,36 @@ export default function Home({ data }) {
           Please note that my projects have been parked and moved to low-end
           devices. As a result, they may not be fully functional.{" "}
         </div>
+        <div className="w-screen, justify-center">
         <Tabs
+          key="first"
+          color="secondary"
+          aria-label="App Type"
+          radius="full"
+          className="m-4 w-screen justify-center "
+        >
+        <Tab key="type" title="Web App">
+             <Tabs
+          key="first"
+          color="secondary"
+          aria-label="App Type"
+          radius="full"
+          className="m-4 w-screen justify-center "
+        >
+        <Tab key="type" title="Web App">
+            <Project_IPFS />
+          </Tab>
+        </Tabs>
+          </Tab>
+        </Tabs>
+        </div>
+
+
+        <div >
+          <Tabs
           key="secondary"
           color="secondary"
-          aria-label="Tabs colors"
+          aria-label="apps"
           radius="full"
           className="m-4 w-screen justify-center "
         >
@@ -48,7 +77,9 @@ export default function Home({ data }) {
           <Tab key="paterns" title="Paterns" isDisabled>
             <Project_huffman />
           </Tab>
-        </Tabs>
+        </Tabs></div>
+       
+        
       </div>
     </DefaultLayout>
   );
