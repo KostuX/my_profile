@@ -9,67 +9,36 @@ import React, { useState } from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
  
-  let content = [<Project_IPFS />, <Project_monTool />, <Project_drone />];
-  let content_webApp =[<Project_IPFS />, <Project_monTool />, <Project_drone />];
 
-  const [content_state, setContent_state] = useState(content)
+  let content_webApp =[{title:'IPFS', content:<Project_IPFS />} ,{title:'monTool',content: <Project_monTool />},{title:'Drone (Game)', content: <Project_drone />}];
+  let content_algo = [{title:"Huffman", content: <Project_huffman />}]
+    let content_other=[{title:'COVID-19 simulator', content:<></>}]
+ 
   function tabs(tabs){
-    return(
-      <>
+    return(      
       <Tabs
         key="first"
         color="secondary"
         aria-label="App Type"
         radius="full"
-        className="m-4 w-screen justify-center ">
+        className="mt-2 w-screen justify-center ">
         {
         tabs.map((e,i)=>(
-          <Tab key={i} title={e.title}>
-            
-
-</Tab>
+          <Tab key={i} title={e.title}>{e.content}</Tab>
         ))}
         
       </Tabs>
-      
-      </>
     )
   }
 
-  let content_types = [{title:'WebApp', content:tabs(content_state)}]
+  let content_types = [{title:'WebApp', content:tabs(content_webApp)},{title:'Algorithms', content:tabs(content_algo)}, {title:'Other', contetn:tabs(content_other)}]
 
   return (
     <DefaultLayout>
-     { tabs(content_types)}
+      <div className="mt-6">  { tabs(content_types)}</div>
+   
 {/*}
-      <div className=" ">
-        <div className="w-screen bg-red-500 text-center">
-          Please note that my projects have been parked and moved to low-end
-          devices. As a result, they may not be fully functional.{" "}
-        </div>
-        <div className="w-screen, justify-center">
-        <Tabs
-          key="first"
-          color="secondary"
-          aria-label="App Type"
-          radius="full"
-          className="m-4 w-screen justify-center "
-        >
-        <Tab key="type" title="Web App">
-             <Tabs
-          key="first"
-          color="secondary"
-          aria-label="App Type"
-          radius="full"
-          className="m-4 w-screen justify-center "
-        >
-        <Tab key="type" title="Web App">
-            <Project_IPFS />
-          </Tab>
-        </Tabs>
-          </Tab>
-        </Tabs>
-        </div>
+     
 
 
         <div >
