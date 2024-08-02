@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 let content = [
   <Index_block1 />,
@@ -50,12 +50,7 @@ export default function Home({ data }) {
       let lastScrollTop = 0;
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        console.log("Scroll Direction: Down");
-      } else {
-        console.log("Scroll Direction: Up");
-      }
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     import("@google/model-viewer").catch(console.error);
