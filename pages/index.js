@@ -26,11 +26,11 @@ export default function Home({ data }) {
     // get user IP address
     async function getIP() {
       try {
-      //  const response = await fetch("https://api.ipify.org?format=json");
-       // const data = await response.json();
+        const response = await fetch("https://api.ipify.org?format=json");
+        const data = await response.json();
 
-     //  let ip = data.ip
-       let ip = '1.1.1.1'
+       let ip = data.ip
+      // let ip = '1.1.1.1'
 
         let data_add = {
           type: "add",
