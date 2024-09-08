@@ -91,8 +91,8 @@ export default function Home({ data }) {
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps( context ) {
     const req = context.req;
-    const ip = req.headers['x-forwarded-for'] || req;
-    console.log(req)
+    const ip = req.headers['x-forwarded-for'] ;
+    console.log(ip)
     return {
       props: {},
     };
