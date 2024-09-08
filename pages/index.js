@@ -23,15 +23,18 @@ let content = [
 
 export default function Home({ data }) {
   useEffect(() => {
-    // get IP address
+    // get user IP address
     async function getIP() {
       try {
-        const response = await fetch("https://api.ipify.org?format=json");
-        const data = await response.json();
+      //  const response = await fetch("https://api.ipify.org?format=json");
+       // const data = await response.json();
+
+     //  let ip = data.ip
+       let ip = '1.1.1.1'
 
         let data_add = {
           type: "add",
-          data: { type: "connected", data: { ip: data.ip } },
+          data: { type: "connected", data: { ip: ip } },
         };
         fetch("/api/LoggerAPI", {
           method: "POST",
@@ -90,9 +93,9 @@ export default function Home({ data }) {
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps( context ) {
-    const req = context.req;
-    const ip = req.headers['x-forwarded-for'] ;
-    console.log(ip)
+    // const req = context.req;
+    // const ip = req.headers['x-forwarded-for'] ;
+    // console.log(ip)
     return {
       props: {},
     };
