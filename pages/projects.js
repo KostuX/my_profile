@@ -12,7 +12,7 @@ export default function Home({ data }) {
 
   let content_webApp =[{title:'IPFS', content:<Project_IPFS />} ,{title:'monTool',content: <Project_monTool />},{title:'Drone (Game)', content: <Project_drone />}];
   let content_algo = [{title:"Huffman", content: <Project_huffman />}]
-    let content_other=[{title:'COVID-19 simulator', content:<></>}]
+  let content_other=[{title:'COVID-19 simulator', content:<></>}]
  
   function tabs(tabs){
     return(      
