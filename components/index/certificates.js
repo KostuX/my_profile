@@ -63,10 +63,18 @@ export const Index_block4 = (props) => {
     }})
   },[])
   return (
-    <div>
 
+    
+    <div >
+
+<div className="grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12  " >
+
+  <span></span>
 
     {textContent}
+    <span></span>
+    </div>
+   
     <div className="xl:min-h-screen grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52 " ref={text}>
 
 
