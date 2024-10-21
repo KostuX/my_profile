@@ -35,6 +35,10 @@ const certs = [
     title: "European Computer Driving Licence",
     filename: "/certs/ComptiaA.png",
   },
+  {
+    title: "ICDL Cloud Computing",
+    filename: "/certs/ICDL Cloud.png",
+  },
 
   {
     title: "Microsoft Networking Fundamentals",
