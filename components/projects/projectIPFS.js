@@ -50,9 +50,9 @@ export const Project_IPFS = (props) => {
         <div className="mt-12 sm:mt-2 sm:w-1/2 ">
           <div>
             <b>Project:</b>{" "}
-            <a href="https://ip-fs.cloud" target="_blank">
+            <a className="underline" href="https://ip-fs.life" target="_blank">
               {" "}
-              ip-fs.cloud
+              https://ip-fs.life
             </a>
           </div>
           <div>

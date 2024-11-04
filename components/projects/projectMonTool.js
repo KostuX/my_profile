@@ -68,7 +68,7 @@ export const Project_monTool = (props) => {
         <div className="mt-12 sm:mt-2 sm:w-1/2 ">
           <div>
             <b>Project:</b>{" "}
-            <a href="https://montool.vercel.app/" target="_blank">
+            <a className="underline" href="https://montool.vercel.app/" target="_blank">
               {" "}
               https://montool.vercel.app/
             </a>
