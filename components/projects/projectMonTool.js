@@ -98,6 +98,7 @@ export const Project_monTool = (props) => {
           </div>
         </div>
       </div>
+      {/*}
       <div className="w-screen mt-52  justify-center text-center font-extrabold text-xl">
         Top view
       </div>
@@ -127,6 +128,7 @@ export const Project_monTool = (props) => {
           </div>
         </div>
       </div>
+      {*/}
     </>
   );
 };

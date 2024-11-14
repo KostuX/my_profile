@@ -87,9 +87,11 @@ export const Project_IPFS = (props) => {
           </div>
         </div>
       </div>
+      {/*}
       <div className="w-screen mt-52  justify-center text-center font-extrabold text-xl">
         Top view
       </div>
+    
       <div className="w-screen md:grid md:grid-cols-2 ">
         <div className="mx-4 m-24 ">
           <div className="text-center "> System Design</div>
@@ -117,6 +119,7 @@ export const Project_IPFS = (props) => {
         </div>
       </div>
 
+  {*/}
       {/*}
       <div className="h-screen border md:m-24">
         {" "}
