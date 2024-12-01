@@ -9,10 +9,6 @@ import { Index_block5 } from "../components/index/contact";
 
 import React, { useEffect, useState } from "react";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-//gsap.registerPlugin(ScrollTrigger);
-
 let content = [
   <Index_block1 />,
   <Index_block2 />,
@@ -29,8 +25,8 @@ export default function Home({ data }) {
         const response = await fetch("https://api.ipify.org?format=json");
         const data = await response.json();
 
-       let ip = data.ip
-      // let ip = '1.1.1.1'
+        let ip = data.ip;
+        // let ip = '1.1.1.1'
 
         let data_add = {
           type: "add",
@@ -53,7 +49,7 @@ export default function Home({ data }) {
       let lastScrollTop = 0;
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     import("@google/model-viewer").catch(console.error);
@@ -92,7 +88,7 @@ export default function Home({ data }) {
 }
 
 export const getServerSideProps = withIronSessionSsr(
-  async function getServerSideProps( context ) {
+  async function getServerSideProps(context) {
     // const req = context.req;
     // const ip = req.headers['x-forwarded-for'] ;
     // console.log(ip)
