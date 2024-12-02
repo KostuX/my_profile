@@ -8,36 +8,43 @@ import { Project_huffman } from "../components/projects/algorithms/huffman/huffm
 import React, { useState } from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 export default function Home({ data }) {
- 
+  let content_webApp = [
+    { title: "IPFS", content: <Project_IPFS /> },
+    { title: "monTool", content: <Project_monTool /> },
+    { title: "Drone (Game)", content: <Project_drone /> },
+  ];
+  let content_algo = [{ title: "Huffman", content: <Project_huffman /> }];
+  let content_other = [{ title: "COVID-19 simulator", content: <></> }];
 
-  let content_webApp =[{title:'IPFS', content:<Project_IPFS />} ,{title:'monTool',content: <Project_monTool />},{title:'Drone (Game)', content: <Project_drone />}];
-  let content_algo = [{title:"Huffman", content: <Project_huffman />}]
-  let content_other=[{title:'COVID-19 simulator', content:<></>}]
- 
-  function tabs(tabs){
-    return(      
+  function tabs(tabs) {
+    return (
       <Tabs
         key="first"
         color="secondary"
         aria-label="App Type"
         radius="full"
-        className="mt-2 w-screen justify-center ">
-        {
-        tabs.map((e,i)=>(
-          <Tab key={i} title={e.title}>{e.content}</Tab>
+        className="mt-2 w-screen justify-center "
+      >
+        {tabs.map((e, i) => (
+          <Tab key={i} title={e.title}>
+            {e.content}
+          </Tab>
         ))}
-        
       </Tabs>
-    )
+    );
   }
 
-  let content_types = [{title:'WebApp', content:tabs(content_webApp)},{title:'Algorithms', content:tabs(content_algo)}, {title:'Other', contetn:tabs(content_other)}]
+  let content_types = [
+    { title: "WebApp", content: tabs(content_webApp) },
+    { title: "Algorithms", content: tabs(content_algo) },
+    { title: "Other", contetn: tabs(content_other) },
+  ];
 
   return (
     <DefaultLayout>
-      <div className="mt-6">  { tabs(content_types)}</div>
-   
-{/*}
+      <div className="mt-6"> {tabs(content_types)}</div>
+
+      {/*}
      
 
 
@@ -84,17 +91,7 @@ export default function Home({ data }) {
 }
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
-    let endpoint = "http:/localhost:3000/api/hello";
-    let api_data = { data: "test api" };
-
-    let response = await fetch(endpoint, {
-      method: "POST",
-      body: JSON.stringify(api_data),
-      headers: { "Content-type": "application/json" },
-    });
-    let res = await response.json();
-    let data = res;
-
+    let data = {};
     return {
       props: { data },
     };
