@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const textContent = (
   <span className="text-xl text-center">
@@ -24,7 +24,7 @@ const certs = [
     title: "European Computer Driving Licence",
     filename: "/certs/JAVA Associate Programmer.png",
   },
- 
+
   {
     title: "JAVA Foundations Associate (Junior)",
     filename: "/certs/JAVA Foundations Associate (Junior).png",
@@ -60,41 +60,45 @@ const certs = [
 
 export const Index_block4 = (props) => {
   const text = useRef(null);
-  useEffect(()=>{    
-    const el = text.current
-    gsap.fromTo(el, {opacity:0},{opacity:1, duration:2, scrollTrigger:{
-        trigger:el
-    }})
-  },[])
+  useEffect(() => {
+    const el = text.current;
+    gsap.fromTo(
+      el,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 2,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, []);
   return (
+    <div>
+      <div className="grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12  ">
+        <span></span>
 
-    
-    <div >
+        {textContent}
+        <span></span>
+      </div>
 
-<div className="grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12  " >
-
-  <span></span>
-
-    {textContent}
-    <span></span>
-    </div>
-   
-    <div className="xl:min-h-screen grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52 " ref={text}>
-
-
-
-      {certs.map((e, index) => (
-        <div key={index} className=" place-content-around flex">
-          {
-            <img
-              className="hover:scale-150 transition-all duration-1000 h-52"
-              src={e.filename}
-              alt={e.title}
-            />
-          }
-        </div>
-      ))}
-    </div>
+      <div
+        className="xl:min-h-screen grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52  mx-10"
+        ref={text}
+      >
+        {certs.map((e, index) => (
+          <div key={index} className=" place-content-around flex">
+            {
+              <img
+                className="hover:scale-150 transition-all duration-1000 h-52 mx-10 sm:mx-5"
+                src={e.filename}
+                alt={e.title}
+              />
+            }
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

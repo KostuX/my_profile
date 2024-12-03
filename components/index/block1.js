@@ -1,19 +1,26 @@
-import React ,{useEffect,useRef}from "react";
+import React, { useEffect, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
-
+gsap.registerPlugin(ScrollTrigger);
 
 export const Index_block1 = (props) => {
   const text = useRef(null);
-  useEffect(()=>{    
-    const el = text.current
-    gsap.fromTo(el, {opacity:0},{opacity:1, duration:1, scrollTrigger:{
-        trigger:el
-    }})
-  },[])
-  
+  useEffect(() => {
+    const el = text.current;
+    gsap.fromTo(
+      el,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, []);
+
   return (
     <div className="mb-56 xl:mb-1 xl:h-screen " {...props}>
       <span className="grid xl:grid-cols-3 gap-4 justify-evenly">
@@ -60,15 +67,18 @@ export const Index_block1 = (props) => {
           </div>
         </span>
 
-        <span ref={text} className="m-12 sm:mt-52  opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center">
+        <span
+          ref={text}
+          className="m-12 sm:mt-52 max-w-2xl opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center"
+        >
           <h1>My name is</h1>
           <h1>【Konstantinas】</h1>
           <h3 className="mb-5">But you can call me Kostas.</h3>
           <h3>
             I'm a Software and Web App Developer with experience in designing,
             developing, and maintaining robust applications. I have skills in
-            AI/ML, data & text analytics, software engineering, and web back-end and
-            front-end development.
+            AI/ML, data & text analytics, software engineering, and web back-end
+            and front-end development.
           </h3>
           <div className="grid  place-items-center  mt-5 ">
             <img src="/programming_.svg" height={50} width={50} />
