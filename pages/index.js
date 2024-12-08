@@ -27,6 +27,7 @@ export default function Home({ data }) {
 
         let ip = data.ip;
         // let ip = '1.1.1.1'
+        console.log(ip)
 
         let data_add = {
           type: "add",
