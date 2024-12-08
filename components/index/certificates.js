@@ -84,7 +84,7 @@ export const Index_block4 = (props) => {
       </div>
 
       <div
-        className="xl:min-h-screen grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52  mx-10"
+        className="xl:min-h-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52  mx-10"
         ref={text}
       >
         {certs.map((e, index) => (
