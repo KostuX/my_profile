@@ -53,7 +53,7 @@ export const Index_block1 = (props) => {
               </div>
               <div className="text-theme_secondary/75 ">
                 <TypeAnimation
-                  sequence={[4000, "How are you doing?!"]}
+                  sequence={[4000, "How are you?!"]}
                   style={{
                     fontSize: "3em",
                     marginLeft: "10%",
@@ -69,7 +69,7 @@ export const Index_block1 = (props) => {
 
         <span
           ref={text}
-          className="m-12 sm:mt-52 max-w-2xl opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center"
+          className="m-12 sm:mt-24 max-w-2xl opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center"
         >
           <h1>My name is</h1>
           <h1>【Konstantinas】</h1>
@@ -81,7 +81,7 @@ export const Index_block1 = (props) => {
             and front-end development.
           </h3>
           <div className="grid  place-items-center  mt-5 ">
-            <img src="/programming_.svg" height={50} width={50} />
+          {/** <img src="/programming_.svg" height={50} width={50} />*/}  
           </div>
         </span>
 

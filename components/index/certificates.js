@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const textContent = (
-  <span className="text-xl text-center">
+  <span className="text-xl text-center ">
     <h1 className="mb-5">【Certificates】</h1>
 
     <h3 className="mb-12">
@@ -76,8 +76,8 @@ export const Index_block4 = (props) => {
   }, []);
   return (
     <div>
-      <div className="grid sm:grid-cols-3 gap-4 mt-56 sm:mt-12  ">
-        <span></span>
+      <div className=" gap-4 mt-56 md:mt-12  mx-12   ">
+        <span className=""></span>
 
         {textContent}
         <span></span>

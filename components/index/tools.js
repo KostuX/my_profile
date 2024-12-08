@@ -33,22 +33,22 @@ export const Index_block2 = (props) => {
         </span>
       </span>
 
-      <div className="  ">{arangeHex()}</div>
+      <div className=" justify-center flex ">{arangeHex()}</div>
 
       <span className="hidden sm:flex grid grid-cols-1 gap-4 m-12 justify-center ">
         <div className="row-span-1 flex ">
-          <ul className="max-w-56 ">Programming languages: Java, JavaScript, PHP, Python</ul>
+          <ul className="max-w-56 "> Java, JavaScript, PHP, Python</ul>
           <ul className="max-w-56 ">
-            Deployment: AWS, DigitalOcean, Linux, Nginx, Docker, PM2, Grafana,
+            AWS, DigitalOcean, Linux, Nginx, Docker, PM2, Grafana,
             Jenkins
           </ul>
 
-          <ul className="max-w-56 "> Web-App: NodeJS, NextJS, Symfony</ul>
-          <ul className="max-w-56 ">Database: CocroachDB, MongoDB, MySQL</ul>
+          <ul className="max-w-56 "> NodeJS, NextJS, Symfony</ul>
+          <ul className="max-w-56 "> CocroachDB, MongoDB, MySQL</ul>
           <ul className="max-w-56 ">
-            AI/ML: TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks{" "}
+           TensorFlow, Keras, Scikit-learn, Jupyter, Neural Networks{" "}
           </ul>
-          <ul className="max-w-56 ">Other: Git, RabbitMQ, FireBase, RestAPI, FastAPI, Swager </ul>
+          <ul className="max-w-56 "> Git, RabbitMQ, FireBase, RestAPI, FastAPI, Swager </ul>
         </div>
       </span>
     </div>

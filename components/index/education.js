@@ -195,12 +195,12 @@ export const Index_block3 = (props) => {
   //<Chart data={qq5} />;
   return (
     <div className="mb-56 xl:mb-1 xl:h-screen h-screen   " ref={text}>
-      <span className=" text-xl grid xl:grid-cols-3 gap-4 justify-evenly ">
-        <span></span>
+      <span className=" text-xl gap-4 justify-evenly ">
+        
         <span className="text-xl text-center">
           <h1 className="mb-5 mt-12 sm:mt-24">【Education】</h1>
 
-          <h3 className="mb-12">
+          <h3 className="mb-12 mx-12">
             Maintained a high GPA throughout my academic career, demonstrating
             strong dedication and intellectual capability. Awarded "Student of
             the Year" for exemplary performance during studies. Graduated with
@@ -208,7 +208,7 @@ export const Index_block3 = (props) => {
             achievements and commitment to excellence.
           </h3>
         </span>
-        <span></span>
+    
       </span>
 
       <div className="h-1/3 w-screen ">
