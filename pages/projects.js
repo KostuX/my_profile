@@ -6,7 +6,7 @@ import { Project_monTool } from "../components/projects/projectMonTool";
 import { Project_drone } from "../components/projects/projectDrone";
 import { Project_huffman } from "../components/projects/algorithms/huffman/huffman";
 import React, { useState } from "react";
-import { Tabs, Tab } from "@nextui-org/react";
+import { Tabs, Tab, Divider } from "@nextui-org/react";
 export default function Home({ data }) {
   let content_webApp = [
     { title: "IPFS", content: <Project_IPFS /> },
@@ -42,7 +42,12 @@ export default function Home({ data }) {
 
   return (
     <DefaultLayout>
-      <div className="mt-6"> {tabs(content_types)}</div>
+      <div className="mt-6"> {/*tabs(content_types)*/}</div>
+      <Project_IPFS /> 
+      <Divider/>
+     <div className="mt-24"><Project_monTool /></div> 
+     <Divider />
+     <div className="mt-24"> <Project_drone /> </div>
 
       {/*}
      

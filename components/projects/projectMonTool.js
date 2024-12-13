@@ -57,15 +57,12 @@ export const Project_monTool = (props) => {
 
   return (
     <>
-      <div className=" sm:flex mx-5">
-        <div className="  mx-5 sm:w-1/2 ">
-          <EmblaCarousel
-            slides={SLIDES}
-            options={OPTIONS}
-            options2={OPTIONS2}
-          />
-        </div>
-        <div className="mt-12 sm:mt-2 sm:w-1/2 ">
+
+<>
+      <div className="  mb-24 ">
+        <div className="text-4xl text-center">MonTool</div>
+        <div className="text-center my-10">
+          {" "}
           <div>
             <b>Project:</b>{" "}
             <a className="underline" href="https://montool.vercel.app/" target="_blank">
@@ -80,8 +77,20 @@ export const Project_monTool = (props) => {
             <b>Purpose:</b> Network monitoring tool (small to medium
             infrastructure)
           </div>
-          <div className="mt-6">
-            The aim of this project is to monitor network activities and inform
+        </div>
+        <div className="  mx-5 flex justify-center ">
+          <div className="max-w-2xl    ">
+            <EmblaCarousel
+              slides={SLIDES}
+              options={OPTIONS}
+              options2={OPTIONS2}
+            />
+          </div>
+        </div>
+        <div className="w-screen  flex justify-center ">
+          {" "}
+          <div className="mt-6 text-lg max-w-4xl  text-center">
+          The aim of this project is to monitor network activities and inform
             the administrator if any trackable or unexpected events occur. There
             are three main parts to this project: an application on the computer
             side, a controller, and a website to display collected data to the
@@ -98,6 +107,13 @@ export const Project_monTool = (props) => {
           </div>
         </div>
       </div>
+   
+   
+      
+    </>
+
+
+
       {/*}
       <div className="w-screen mt-52  justify-center text-center font-extrabold text-xl">
         Top view

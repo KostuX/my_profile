@@ -14,9 +14,10 @@ export const Project_drone = (props) => {
 
   return (
     <>
-      <div className=" sm:flex mx-5">
-       
-        <div className="mt-12 sm:mt-2 w-screen ">
+
+<div className="text-4xl text-center">Drone Game</div>
+        <div className="text-center my-10">
+          {" "}
           <div>
             <b>Project:</b>{" "}
             <a href="https://kostux.github.io/Drone_game/" target="_blank">
@@ -25,10 +26,10 @@ export const Project_drone = (props) => {
             </a>
           </div>
           <div>
-            <b>Language:</b> C#/C++
+          <b>Language:</b> C#/C++
           </div>
           <div>
-            <b>Purpose:</b> Simple game created using Unity
+          <b>Purpose:</b> Simple game created using Unity
           </div>
           <div className="  mx-5 w-screen h-screen mt-12 ">
           <iframe
@@ -38,7 +39,15 @@ export const Project_drone = (props) => {
           ></iframe>
         </div>
         </div>
-      </div>
+
+
+
+
+
+    
+       
+
+    
    
     </>
   );
