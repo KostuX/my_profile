@@ -5,6 +5,7 @@ import { Project_IPFS } from "../components/projects/projectIPFS";
 import { Project_monTool } from "../components/projects/projectMonTool";
 import { Project_drone } from "../components/projects/projectDrone";
 import { Project_huffman } from "../components/projects/algorithms/huffman/huffman";
+import { Project_fixTuneMotors } from "../components/projects/fixtunemotors";
 import React, { useState } from "react";
 import { Tabs, Tab, Divider } from "@nextui-org/react";
 export default function Home({ data }) {
@@ -47,7 +48,10 @@ export default function Home({ data }) {
       <Divider/>
      <div className="mt-24"><Project_monTool /></div> 
      <Divider />
+     <div className="mt-24"> <Project_fixTuneMotors /> </div>
+     <Divider />
      <div className="mt-24"> <Project_drone /> </div>
+     
 
       {/*}
      

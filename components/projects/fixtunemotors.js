@@ -1,39 +1,32 @@
 import EmblaCarousel from "../emblaCarousel/Embla";
 import Autoplay from "embla-carousel-autoplay";
 
-export const Project_drone = (props) => {
-  const OPTIONS = { loop: true };
-  const OPTIONS2 = [Autoplay({ delay: 10000 })];
-
-  const SLIDES = [
-    {
-      src: "./projectImg/monTool/dashboardd.png",
-      description: "Game",
-    },
-  ];
+export const Project_fixTuneMotors = (props) => {
+ 
+  
 
   return (
     <>
 
-<div className="text-4xl text-center">Drone Game</div>
+<div className="text-4xl text-center">Fix Tune Motors</div>
         <div className="text-center my-10">
           {" "}
           <div>
             <b>Project:</b>{" "}
-            <a href="https://kostux.github.io/Drone_game/" target="_blank">
+            <a href="https://fixtunemotors.ie/" target="_blank">
               {" "}
-              https://kostux.github.io/Drone_game/
+              https://fixtunemotors.ie
             </a>
           </div>
           <div>
-          <b>Language:</b> C#/C++
+          <b>Language:</b> Javascipt
           </div>
           <div>
-          <b>Purpose:</b> Simple game created using Unity
+          <b>Purpose:</b> Local business website
           </div>
           <div className="  mx-5 w-screen h-screen mt-12 flex justify-center">
           <iframe
-            src="https://kostux.github.io/Drone_game/"
+            src="https://fixtunemotors.ie/"
             width="80%"
             height="100%"
           ></iframe>
