@@ -75,23 +75,22 @@ export const Index_block4 = (props) => {
     );
   }, []);
   return (
-    <div>
-      <div className=" gap-4 mt-56 md:mt-12  mx-12   ">
-        <span className=""></span>
+    <div className=" ">
+      <div className=" ">    
 
         {textContent}
-        <span></span>
+       
       </div>
 
       <div
-        className="xl:min-h-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-56 sm:mt-12 sm:mb-52  mx-10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 "
         ref={text}
       >
         {certs.map((e, index) => (
-          <div key={index} className=" place-content-around flex">
+          <div key={index} className="flex justify-center my-5">
             {
               <img
-                className="hover:scale-150 transition-all duration-1000 h-52 mx-10 sm:mx-5"
+                className="hover:scale-150 transition-all duration-1000 h-52 "
                 src={e.filename}
                 alt={e.title}
               />
