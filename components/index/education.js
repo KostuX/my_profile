@@ -194,7 +194,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-56 xl:mb-1   " ref={text}>
+    <div className="mb-56 xl:mb-1  " ref={text}>
       <span className=" text-xl gap-4 justify-evenly ">
         
         <span className="text-xl text-center">
@@ -211,13 +211,13 @@ export const Index_block3 = (props) => {
     
       </span>
 
-      <div className="h-1/3 w-screen ">
+      <div className=" ">
         <span className="mb-12">
           <h1 className="text-center">{charts[activeIndex].title}</h1>
           <h2 className="text-center">{charts[activeIndex].subTitle}</h2>
         </span>
 
-        <span className="">{charts[activeIndex].chart} </span>
+        <div className="h-screen ">{charts[activeIndex].chart} </div>
         <span className="mx-12  grid justify-items-center mb-12">
           {progressBar({
             value: charts[activeIndex].avg,
