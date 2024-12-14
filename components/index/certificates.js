@@ -76,7 +76,7 @@ export const Index_block4 = (props) => {
   }, []);
   return (
     <div className=" ">
-      <div className=" ">    
+      <div className="mx-12 ">    
 
         {textContent}
        
