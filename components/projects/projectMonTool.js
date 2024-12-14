@@ -89,7 +89,7 @@ export const Project_monTool = (props) => {
         </div>
         <div className="w-screen  flex justify-center ">
           {" "}
-          <div className="mt-6 text-lg max-w-4xl  text-center">
+          <div className="mt-6 text-lg max-w-4xl mx-10  text-center">
           The aim of this project is to monitor network activities and inform
             the administrator if any trackable or unexpected events occur. There
             are three main parts to this project: an application on the computer

@@ -68,7 +68,7 @@ export const Project_IPFS = (props) => {
         </div>
         <div className="w-screen  flex justify-center ">
           {" "}
-          <div className="mt-6 text-lg max-w-4xl  text-center">
+          <div className="mt-6 mx-10 text-lg max-w-4xl  text-center">
             User-friendly Gateway to the IPFS Network. My project acts as a
             bridge from Web 2.0 to Web 3.0, simplifying the complexities of
             decentralized networks. It offers a service similar to centralized
