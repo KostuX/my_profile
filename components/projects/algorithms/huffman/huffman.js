@@ -20,28 +20,26 @@ export function Project_huffman() {
   ];
   return (
     <>
-      <div className=" sm:flex mx-5">
-        <div className="flex mx-5 sm:w-1/2 justify-center ">
-          <EmblaCarousel
-            slides={SLIDES}
-            options={OPTIONS}
-            options2={OPTIONS2}
-          />
-        </div>
-        <div className="mt-12 sm:mt-2 sm:w-1/2 ">
+      
+      <div className="  mb-24 grid  flex justify-center ">
+        <div className="text-4xl text-center">Huffman Tree</div>
+        <div className="text-center my-10">
+          {" "}
           <div>
-            <b>Project:</b> Huffman Coding
+            <b>Project:</b>{" "}
+           Encoder/Decoder based on Huffman tree
           </div>
           <div>
             <b>Language:</b> Java
           </div>
           <div>
-            <b>Purpose:</b> Text Encoding/Compression
+            <b>Purpose:</b> Text encoder/decoder which allows to compress text
           </div>
           <div>
             <b>Source code:</b> https://github.com/KostuX/huffman.git
           </div>
-          <div className="mt-6">
+        </div>
+        <div className="mt-6 mx-10 text-lg max-w-4xl  text-center">
             Huffman coding is a scheme that assigns variable-length bit-codes
             (binary strings) to characters, such that the lengths of the codes
             depend on the frequencies of the characters in a typical message. As
@@ -54,7 +52,18 @@ export function Project_huffman() {
             to decode an encoded message as it provides a way to determine which
             bit sequences translate back to a character.
           </div>
+        <div className=" m-5  justify-center  ">
+          <EmblaCarousel
+            slides={SLIDES}
+            options={OPTIONS}
+            options2={OPTIONS2}
+          />
         </div>
+     
+        
+        
+       
+      
       </div>
     </>
   );

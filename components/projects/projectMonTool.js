@@ -79,7 +79,7 @@ export const Project_monTool = (props) => {
           </div>
         </div>
         <div className="  mx-5 flex justify-center ">
-          <div className="max-w-2xl    ">
+        <div className="max-w-4xl w-5/6   ">
             <EmblaCarousel
               slides={SLIDES}
               options={OPTIONS}

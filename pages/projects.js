@@ -52,7 +52,8 @@ export default function Home({ data }) {
      <Divider />
      <div className="mt-24"> <Project_drone /> </div>
      
-
+     <Divider />
+     <div className="mt-24"> <Project_huffman /> </div>
       {/*}
      
 

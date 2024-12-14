@@ -194,7 +194,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-56 xl:mb-1 " ref={text}>
+    <div className="mb-24 sm:mb-56 xl:mb-1 " ref={text}>
       <div className=" text-xl  ">
         
         <div className="text-xl text-center">
@@ -227,7 +227,7 @@ export const Index_block3 = (props) => {
        
         </div>
        
-        <div className="h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>
+        <div className="h-[25vh] sm:h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>
 
       
       

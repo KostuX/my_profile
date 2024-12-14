@@ -15,7 +15,7 @@ export const Project_fixTuneMotors = (props) => {
             <b>Project:</b>{" "}
             <a href="https://fixtunemotors.ie/" target="_blank">
               {" "}
-              https://fixtunemotors.ie
+              www.fixtunemotors.ie
             </a>
           </div>
           <div>
