@@ -136,7 +136,7 @@ const charts = [
   {
     title: "Bachelor of Science (Honours) in ",
     subTitle: "Computing in Information Technology (Level 8)",
-    chart: <Chart data={qq8} />,
+    chart: <Chart data={qq8} className=""/>,
     avg: 80,
   },
   {
@@ -194,10 +194,10 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-56 xl:mb-1  " ref={text}>
-      <span className=" text-xl gap-4 justify-evenly ">
+    <div className="mb-56 xl:mb-1 " ref={text}>
+      <div className=" text-xl  ">
         
-        <span className="text-xl text-center">
+        <div className="text-xl text-center">
           <h1 className="mb-5 mt-12 sm:mt-24">【Education】</h1>
 
           <h3 className="mb-12 mx-12">
@@ -207,23 +207,30 @@ export const Index_block3 = (props) => {
             First Class Honours in Computing in Information Technology, recognized for outstanding academic
             achievements and commitment to excellence.
           </h3>
-        </span>
+        </div>
     
-      </span>
+      </div>
 
-      <div className=" ">
-        <span className="mb-12">
+      <div className="h-fit ">
+        <div className="grid justify-center ">
+          <div>
           <h1 className="text-center">{charts[activeIndex].title}</h1>
           <h2 className="text-center">{charts[activeIndex].subTitle}</h2>
-        </span>
-
-        <div className="h-screen ">{charts[activeIndex].chart} </div>
-        <span className="mx-12  grid justify-items-center mb-12">
+          </div>
+          <div className="mx-12  ">
           {progressBar({
             value: charts[activeIndex].avg,
             title: "Grade Average",
           })}
-        </span>
+          
+        </div>
+       
+        </div>
+       
+        <div className="h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>
+
+      
+      
       </div>
     </div>
   );

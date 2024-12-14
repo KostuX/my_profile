@@ -10,7 +10,7 @@ import {
 
 export const Chart = (data) => {
   return (
-    <ResponsiveContainer>
+    <ResponsiveContainer className="">
       <RadarChart outerRadius="80%" data={data.data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" tick={{ fontSize: 10 }} />
