@@ -71,9 +71,9 @@ export const Index_block1 = (props) => {
           ref={text}
           className="m-12 sm:mt-24 max-w-2xl opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center"
         >
-          <h1>My name is</h1>
-          <h1>【Konstantinas】</h1>
-          <h3 className="mb-5">But you can call me Kostas.</h3>
+          <h1 className="font-bold">My name is</h1>
+          <h1 className="font-bold">【Konstantinas】</h1>
+          <h3 className="mb-5 font-bold">But you can call me Kostas.</h3>
           <h3>
             I'm a Software and Web App Developer with experience in designing,
             developing, and maintaining robust applications. I have skills in

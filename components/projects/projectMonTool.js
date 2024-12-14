@@ -60,7 +60,7 @@ export const Project_monTool = (props) => {
 
 <>
       <div className="  mb-24 ">
-        <div className="text-4xl text-center">MonTool</div>
+        <div className="text-4xl text-center font-bold">MonTool</div>
         <div className="text-center my-10">
           {" "}
           <div>

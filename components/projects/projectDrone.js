@@ -15,7 +15,7 @@ export const Project_drone = (props) => {
   return (
     <>
 
-<div className="text-4xl text-center">Drone Game</div>
+<div className="text-4xl text-center font-bold">Drone Game</div>
         <div className="text-center my-10">
           {" "}
           <div>

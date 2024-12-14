@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const textContent = (
   <span className="text-xl text-center ">
-    <h1 className="mb-5">【Certificates】</h1>
+    <h1 className="mb-5 font-bold">【Certificates】</h1>
 
     <h3 className="mb-12">
       Have obtained certifications as JAVA Programmer, as well as Microsoft

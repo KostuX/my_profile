@@ -22,7 +22,7 @@ export const Index_block2 = (props) => {
       <span className=" sm:m-12 text-xl sm:grid xl:grid-cols-3 gap-4 ">
         <span></span>
         <span>
-          <h1 className="mb-5">【My tools】</h1>
+          <h1 className="mb-5 font-bold">【My tools】</h1>
 
           <h3 className="mb-5   ">
             Over the past years, I have honed my skills in various programming

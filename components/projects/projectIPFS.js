@@ -40,7 +40,7 @@ export const Project_IPFS = (props) => {
   return (
     <>
       <div className="  mb-24 ">
-        <div className="text-4xl text-center">IPFS Life</div>
+        <div className="text-4xl font-bold text-center">IPFS Life</div>
         <div className="text-center my-10">
           {" "}
           <div>

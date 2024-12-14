@@ -46,12 +46,14 @@ export const Navbar = () => {
         {/** Links | center | large */}
         <NavbarContent className="hidden sm:flex" justify="center">
           {cfg.navItems.map((e) => (
+            
             <NavbarItem key={e.label}>
               <NextLink
                 className="flex justify-start items-center m-1 "
                 href={e.href}
                 key={e.label}
               >
+               
                 {e.label}
               </NextLink>
             </NavbarItem>
@@ -69,7 +71,7 @@ export const Navbar = () => {
         </NavbarContent>
 
         {/** Menu | end | large */}
-        <NavbarContent className="sm:hidden flex basis-1 pl-4" justify="end">
+        <NavbarContent className="sm:hidden flex basis-1 pl-4 " justify="end">
           <NavbarMenuToggle />
           <ThemeSwitch />
           <NavbarMenu justify="end">
@@ -80,7 +82,9 @@ export const Navbar = () => {
                   href={e.href}
                   size="lg"
                 >
-                  {e.label}
+                  <div className="text-center font-bold text-2xl mt-10 "> {e.label}</div>
+                 
+                 
                 </NextLink>
               </NavbarMenuItem>
             ))}

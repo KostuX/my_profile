@@ -198,7 +198,7 @@ export const Index_block3 = (props) => {
       <div className=" text-xl  ">
         
         <div className="text-xl text-center">
-          <h1 className="mb-5 mt-12 sm:mt-24">【Education】</h1>
+          <h1 className="mb-5 mt-12 sm:mt-24 font-bold">【Education】</h1>
 
           <h3 className="mb-12 mx-12">
             Maintained a high GPA throughout my academic career, demonstrating

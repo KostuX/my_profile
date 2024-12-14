@@ -85,7 +85,7 @@ export const Index_block5 = (props) => {
   return (
     <div className="flex items-center justify-center mt-16 h-screen " ref={text}>
       <div className="mx-24  text-center  text-xl max-w-xl  ">
-        <h1 className="mb-5 ">【Contact】</h1>
+        <h1 className="mb-5 font-bold">【Contact】</h1>
         <span className="">
           <span className=" ">
             <span className="text-pink-500"></span>{" "}

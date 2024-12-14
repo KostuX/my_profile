@@ -8,7 +8,7 @@ export const Project_fixTuneMotors = (props) => {
   return (
     <>
 
-<div className="text-4xl text-center">Fix Tune Motors</div>
+<div className="text-4xl text-center font-bold">Fix Tune Motors</div>
         <div className="text-center my-10">
           {" "}
           <div>
