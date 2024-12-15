@@ -29,7 +29,7 @@ const certs = [
     title: "JAVA Foundations Associate (Junior)",
     filename: "/certs/JAVA Foundations Associate (Junior).png",
   },
-  { title: "European Computer Driving Licence", filename: "/certs/ECDL.jpg" },
+  { title: "European Computer Driving Licence", filename: "/certs/ECDL.png" },
 
   {
     title: "European Computer Driving Licence",
@@ -76,11 +76,7 @@ export const Index_block4 = (props) => {
   }, []);
   return (
     <div className=" ">
-      <div className="mx-12 ">    
-
-        {textContent}
-       
-      </div>
+      <div className="mx-12 ">{textContent}</div>
 
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 "
