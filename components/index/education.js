@@ -1,6 +1,7 @@
 import React, { PureComponent, useState } from "react";
 import { Chart } from "./radarChart/radarChart";
 import { progressBar } from "../progressBar";
+import { Parallax,ParallaxProvider } from "react-scroll-parallax";
 
 import { useRef, useEffect } from "react";
 
@@ -195,10 +196,14 @@ export const Index_block3 = (props) => {
   //<Chart data={qq5} />;
   return (
     <div className="mb-24 sm:mb-56 xl:mb-1 " ref={text}>
+     < ParallaxProvider>
       <div className=" text-xl  ">
         
         <div className="text-xl text-center">
+        <Parallax speed={1}>
           <h1 className="mb-5 mt-12 sm:mt-24 font-bold">【Education】</h1>
+          </Parallax>
+          <Parallax speed={-1}>
 
           <h3 className="mb-12 mx-12">
             Maintained a high GPA throughout my academic career, demonstrating
@@ -207,10 +212,11 @@ export const Index_block3 = (props) => {
             First Class Honours in Computing in Information Technology, recognized for outstanding academic
             achievements and commitment to excellence.
           </h3>
+          </Parallax>
         </div>
     
       </div>
-
+      <Parallax speed={1}>
       <div className="h-fit ">
         <div className="grid justify-center ">
           <div>
@@ -232,6 +238,8 @@ export const Index_block3 = (props) => {
       
       
       </div>
+      </Parallax>
+    </ParallaxProvider>
     </div>
   );
 };

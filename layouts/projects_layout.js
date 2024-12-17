@@ -1,6 +1,8 @@
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { useEffect, useRef } from "react";
 import EmblaCarousel from "../components/emblaCarousel/Embla";
 import Autoplay from "embla-carousel-autoplay";
+
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -27,7 +29,11 @@ export const Projects_layout = (prop) => {
 
     return (
         <div className="mt-12 mb-12 text-center" ref={load}>
+            <ParallaxProvider>
+                <Parallax speed={1}>
             <div className={`text-4xl font-bold ${neue.className}`}>{project.title}</div>
+            </Parallax>
+            <Parallax speed={-1}>
             <div className="mx-4">
                 <div>
                     <b>Project: </b>
@@ -42,6 +48,8 @@ export const Projects_layout = (prop) => {
                     <b>Purpose: </b> {project.description_short}
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={1}>
             <div className="mt-12 flex justify-center">
                 <div className="max-w-4xl w-5/6">
                     <EmblaCarousel
@@ -51,11 +59,15 @@ export const Projects_layout = (prop) => {
                     />
                 </div>
             </div>
+            </Parallax>
+            <Parallax speed={-1}>
             <div className="flex justify-center">
                 <div className="mx-4 mt-6 text-lg max-w-4xl text-center">
                     {project.description}
                 </div>
             </div>
+            </Parallax>
+            </ParallaxProvider>
         </div>
     );
 };

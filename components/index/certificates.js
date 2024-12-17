@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -75,25 +76,44 @@ export const Index_block4 = (props) => {
     );
   }, []);
   return (
-    <div  ref={text}>
-      <div className="mx-12 ">{textContent}</div>
+    <div ref={text}>
+      <ParallaxProvider >
 
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 "
-       
-      >
-        {certs.map((e, index) => (
-          <div key={index} className="flex justify-center my-5">
-            {
-              <img
-                className="hover:scale-150 transition-all duration-1000 h-52 "
-                src={e.filename}
-                alt={e.title}
-              />
-            }
+        <div className="mx-12 ">
+          <span className="text-xl text-center ">
+            <Parallax speed={1}>
+              <h1 className="mb-5 font-bold">【Certificates】</h1>
+            </Parallax>
+            <Parallax speed={-1}>
+              <h3 className="mb-12">
+                Have obtained certifications as JAVA Programmer, as well as Microsoft
+                specializations in Networking, Security, Server Administration, and
+                Operating Systems, demonstrating my comprehensive technical expertise and
+                commitment to continuous learning. These certifications reflect my ability
+                to manage complex IT systems and develop robust, secure software
+                solutions.
+              </h3>
+            </Parallax>
+          </span></div>
+
+        <Parallax speed={1}>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 "
+          >
+            {certs.map((e, index) => (
+              <div key={index} className="flex justify-center my-5">
+                {
+                  <img
+                    className="hover:scale-150 transition-all duration-1000 h-52 "
+                    src={e.filename}
+                    alt={e.title}
+                  />
+                }
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </Parallax>
+      </ParallaxProvider>
     </div>
   );
 };

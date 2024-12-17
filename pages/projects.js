@@ -6,7 +6,7 @@ import { Project_fixTuneMotors } from "../components/projects/fixtunemotors";
 import { Projects_layout } from "../layouts/projects_layout"
 import { projects_cfg } from "../config/cfg_projects"
 import React from "react";
-import {  Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 export default function Project() {
 
   return (
@@ -16,8 +16,6 @@ export default function Project() {
         <Divider />
       </>))}
 
-
-    
       <div className="mt-24"> <Project_drone /> </div>
     </DefaultLayout>
   );

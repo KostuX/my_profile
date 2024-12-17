@@ -46,7 +46,7 @@ export default function Home({ data }) {
     getIP();
 
     // scroll event listener
-    addEventListener("scroll", (event) => {});
+    addEventListener("scroll", (event) => { });
     onscroll = (event) => {
       let lastScrollTop = 0;
       const scrollTop =
@@ -84,8 +84,8 @@ export default function Home({ data }) {
     <DefaultLayout>
       {content.map((e, i) => (
         <div className="mt-24 mb-24">
-        <div key={i}>{e}</div>
-        <Divider/>
+          <div key={i}>{e}</div>
+          <Divider />
         </div>
       ))}
     </DefaultLayout>

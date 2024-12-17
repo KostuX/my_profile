@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
 import { printError } from "../../lib/helper/printError";
 import { validate } from "../../lib/helper/validator";
-import validator from "validator";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 
 
@@ -83,9 +83,13 @@ export const Index_block5 = (props) => {
   }
 
   return (
-    <div className="flex items-center justify-center mt-16 h-screen " ref={text}>
+    <div className="flex items-center justify-center mt-4 sm:mt-16 h-screen " ref={text}>
+      <ParallaxProvider>
       <div className="mx-24  text-center  text-xl max-w-xl  ">
+        <Parallax speed={1}>
         <h1 className="mb-5 font-bold">【Contact】</h1>
+        </Parallax>
+        <Parallax speed={-1}>
         <span className="">
           <span className=" ">
             <span className="text-pink-500"></span>{" "}
@@ -123,6 +127,7 @@ export const Index_block5 = (props) => {
             </Button>
           </span>
         </span>
+        </Parallax>
         <span className="text-default-500 justify-center xl:flex m-12 place-content-end">
           <NextLink href={cfg.links.github} aria-label="Github">
             <span className="flex  sm:m-4">
@@ -157,6 +162,7 @@ export const Index_block5 = (props) => {
           </NextLink>
         </span>
       </div>
+      </ParallaxProvider>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Parallax,ParallaxProvider } from "react-scroll-parallax";
 import { TypeAnimation } from "react-type-animation";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -71,15 +72,21 @@ export const Index_block1 = (props) => {
           ref={text}
           className="m-12 sm:mt-24 max-w-2xl opacity-0   bg-theme_secondary-950 border-theme_secondary text-xl  text-center"
         >
+          <ParallaxProvider>
+          <Parallax speed={1}>
           <h1 className="font-bold">My name is</h1>
           <h1 className="font-bold">【Konstantinas】</h1>
           <h3 className="mb-5 font-bold">But you can call me Kostas.</h3>
+          </Parallax>
+          <Parallax speed={-1}>
           <h3>
             I'm a Software and Web App Developer with experience in designing,
             developing, and maintaining robust applications. I have skills in
             AI/ML, data & text analytics, software engineering, and web back-end
             and front-end development.
           </h3>
+          </Parallax>
+          </ParallaxProvider>
           <div className="grid  place-items-center  mt-5 ">
           {/** <img src="/programming_.svg" height={50} width={50} />*/}  
           </div>
