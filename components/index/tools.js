@@ -24,7 +24,7 @@ export const Index_block2 = (props) => {
         <span>
           <h1 className="mb-5 font-bold">【My tools】</h1>
 
-          <h3 className="mb-5   ">
+          <h3 className="mb-5  mx-12 ">
             Over the past years, I have honed my skills in various programming
             languages, including Java, JavaScript, PHP and Python, while working
             on diverse projects that span web development, mobile app creation,

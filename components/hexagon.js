@@ -1,8 +1,26 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 export default function Hexagon({ size, props, image }) {
   let height = size;
   let width = height * 1.15;
 
+  let rand = Math.floor(Math.random() * 5);
+
+  const load = useRef(null);
+    useEffect(() => {
+        const el = load.current
+        gsap.fromTo(el, { opacity: 0 }, {
+            opacity: 1, duration: rand, scrollTrigger: {
+                trigger: el
+            }
+        })
+    }, [])
+
   return (
+    <div ref={load}>
     <div
       style={{
         height: height,
@@ -42,6 +60,7 @@ export default function Hexagon({ size, props, image }) {
           ></img>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,5 +1,10 @@
+import { useEffect, useRef } from "react";
 import EmblaCarousel from "../components/emblaCarousel/Embla";
 import Autoplay from "embla-carousel-autoplay";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 import { Bebas_Neue } from 'next/font/google'
 const neue = Bebas_Neue({ subsets: ['latin'], weight: "400" })
@@ -8,15 +13,25 @@ export const Projects_layout = (prop) => {
     const OPTIONS = { loop: true };
     const OPTIONS2 = [Autoplay({ delay: 10000 })];
 
+    const load = useRef(null);
+    useEffect(() => {
+        const el = load.current
+        gsap.fromTo(el, { opacity: 0 }, {
+            opacity: 1, duration: 3, scrollTrigger: {
+                trigger: el
+            }
+        })
+    }, [])
+
     const project = prop.project
 
     return (
-        <div className="mt-12 mb-12 text-center">
+        <div className="mt-12 mb-12 text-center" ref={load}>
             <div className={`text-4xl font-bold ${neue.className}`}>{project.title}</div>
-            <div className="mx-4">                
+            <div className="mx-4">
                 <div>
                     <b>Project: </b>
-                    <a className="underline" href={project.link} target="_blank">                        
+                    <a className="underline" href={project.link} target="_blank">
                         {project.link}
                     </a>
                 </div>

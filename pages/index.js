@@ -6,6 +6,7 @@ import { Index_block2 } from "../components/index/tools";
 import { Index_block3 } from "../components/index/education";
 import { Index_block4 } from "../components/index/certificates";
 import { Index_block5 } from "../components/index/contact";
+import { Divider } from "@nextui-org/react";
 
 import React, { useEffect, useState } from "react";
 
@@ -82,7 +83,10 @@ export default function Home({ data }) {
   return (
     <DefaultLayout>
       {content.map((e, i) => (
+        <div className="mt-24 mb-24">
         <div key={i}>{e}</div>
+        <Divider/>
+        </div>
       ))}
     </DefaultLayout>
   );
@@ -90,9 +94,6 @@ export default function Home({ data }) {
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps(context) {
-    // const req = context.req;
-    // const ip = req.headers['x-forwarded-for'] ;
-    // console.log(ip)
     return {
       props: {},
     };

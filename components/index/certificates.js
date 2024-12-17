@@ -75,12 +75,12 @@ export const Index_block4 = (props) => {
     );
   }, []);
   return (
-    <div className=" ">
+    <div  ref={text}>
       <div className="mx-12 ">{textContent}</div>
 
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 "
-        ref={text}
+       
       >
         {certs.map((e, index) => (
           <div key={index} className="flex justify-center my-5">
