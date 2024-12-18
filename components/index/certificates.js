@@ -5,20 +5,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const textContent = (
-  <span className="text-xl text-center ">
-    <h1 className="mb-5 font-bold">【Certificates】</h1>
-
-    <h3 className="mb-12">
-      Have obtained certifications as JAVA Programmer, as well as Microsoft
-      specializations in Networking, Security, Server Administration, and
-      Operating Systems, demonstrating my comprehensive technical expertise and
-      commitment to continuous learning. These certifications reflect my ability
-      to manage complex IT systems and develop robust, secure software
-      solutions.
-    </h3>
-  </span>
-);
 
 const certs = [
   {
@@ -76,16 +62,18 @@ export const Index_block4 = (props) => {
     );
   }, []);
   return (
-    <div ref={text}>
+    <div className="mb-24 sm:mb-56 xl:mb-24 flex justify-center mx-0 sm:mx-12" ref={text}>
       <ParallaxProvider >
-
-        <div className="mx-12 ">
-          <span className="text-xl text-center ">
+      <div className=" w-screen ">
+        
+        <div className="text-xl text-center">
+         
             <Parallax speed={1}>
               <h1 className="mb-5 font-bold">【Certificates】</h1>
             </Parallax>
             <Parallax speed={-1}>
-              <h3 className="mb-12">
+              <div className="flex justify-center">
+              <h3 className="mb-12 max-w-2xl">
                 Have obtained certifications as JAVA Programmer, as well as Microsoft
                 specializations in Networking, Security, Server Administration, and
                 Operating Systems, demonstrating my comprehensive technical expertise and
@@ -93,8 +81,9 @@ export const Index_block4 = (props) => {
                 to manage complex IT systems and develop robust, secure software
                 solutions.
               </h3>
+              </div>
             </Parallax>
-          </span></div>
+          </div>
 
         <Parallax speed={1}>
           <div
@@ -113,7 +102,10 @@ export const Index_block4 = (props) => {
             ))}
           </div>
         </Parallax>
+        </div>
+
       </ParallaxProvider>
+      
     </div>
   );
 };

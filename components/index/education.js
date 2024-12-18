@@ -195,7 +195,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-24 sm:mb-56 xl:mb-1 " ref={text}>
+    <div className="mb-24 sm:mb-56 xl:mb-12 flex justify-center" ref={text}>
      < ParallaxProvider>
       <div className=" text-xl  ">
         
@@ -204,19 +204,19 @@ export const Index_block3 = (props) => {
           <h1 className="mb-5 mt-12 sm:mt-24 font-bold">【Education】</h1>
           </Parallax>
           <Parallax speed={-1}>
+            <div className="flex justify-center">
 
-          <h3 className="mb-12 mx-12">
+          <h3 className="mb-12 mx-12 max-w-2xl">
             Maintained a high GPA throughout my academic career, demonstrating
             strong dedication and intellectual capability. Awarded "Student of
             the Year" for exemplary performance during studies. Graduated with
             First Class Honours in Computing in Information Technology, recognized for outstanding academic
             achievements and commitment to excellence.
           </h3>
+          </div>
           </Parallax>
         </div>
-    
-      </div>
-      <Parallax speed={1}>
+        <Parallax speed={1}>
       <div className="h-fit ">
         <div className="grid justify-center ">
           <div>
@@ -233,12 +233,12 @@ export const Index_block3 = (props) => {
        
         </div>
        
-        <div className="h-[25vh] sm:h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>
-
-      
+        <div className="h-[25vh] sm:h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>     
       
       </div>
       </Parallax>
+      </div>
+  
     </ParallaxProvider>
     </div>
   );
