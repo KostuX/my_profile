@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { cfg_site as cfg } from "../../config/cfg_site";
 import { printError } from "../../lib/helper/printError";
 import { validate } from "../../lib/helper/validator";
+import validator from 'validator';
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 
