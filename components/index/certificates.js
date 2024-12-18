@@ -73,7 +73,7 @@ export const Index_block4 = (props) => {
             </Parallax>
             <Parallax speed={-1}>
               <div className="flex justify-center">
-              <h3 className="mb-12 max-w-2xl">
+              <h3 className="mb-12 mx-12 max-w-2xl">
                 Have obtained certifications as JAVA Programmer, as well as Microsoft
                 specializations in Networking, Security, Server Administration, and
                 Operating Systems, demonstrating my comprehensive technical expertise and
