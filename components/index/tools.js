@@ -44,7 +44,7 @@ export const Index_block2 = (props) => {
           <div className="">{arangeHex()}</div>
         </Parallax>
 
-        <div className="hidden sm:flex grid grid-cols-1 gap-4 m-12  ">
+        <div className="hidden sm:flex grid grid-cols-1 gap-4 m-12 justify-center ">
           <div className="row-span-1 flex ">
             <ul className="max-w-56 "> Java, JavaScript, PHP, Python</ul>
             <ul className="max-w-56 ">

@@ -195,7 +195,7 @@ export const Index_block3 = (props) => {
   };
   //<Chart data={qq5} />;
   return (
-    <div className="mb-24 sm:mb-56 xl:mb-12 flex justify-center" ref={text}>
+    <div className="mb-24 sm:mb-56 xl:mb-24 flex justify-center" ref={text}>
      < ParallaxProvider>
       <div className=" text-xl  ">
         
@@ -206,7 +206,7 @@ export const Index_block3 = (props) => {
           <Parallax speed={-1}>
             <div className="flex justify-center">
 
-          <h3 className="mb-12 mx-12 max-w-2xl">
+          <h3 className="mb-12 sm:mx-12 max-w-2xl">
             Maintained a high GPA throughout my academic career, demonstrating
             strong dedication and intellectual capability. Awarded "Student of
             the Year" for exemplary performance during studies. Graduated with
