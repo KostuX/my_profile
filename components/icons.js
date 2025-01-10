@@ -1,4 +1,11 @@
 import * as React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+
+
+export const LinkedIn = (size=10)=>{
+  return <FaLinkedin size={size.size}/>
+}
 
 export const Logo = ({ size = 32, scale, width, height, ...props }) => (
   <svg
@@ -190,3 +197,10 @@ export const NextUILogo = (props) => {
     </svg>
   );
 };
+
+
+export const GitHub = (size=100) => {
+  return <FaGithub size={size} />
+  
+
+}

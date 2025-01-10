@@ -1,6 +1,5 @@
 import DefaultLayout from "../layouts/default";
-import { withIronSessionSsr } from "iron-session/next";
-import { ironOptions } from "../config/session/session_config";
+
 import { Project_drone } from "../components/projects/projectDrone";
 import { Project_fixTuneMotors } from "../components/projects/fixtunemotors";
 import { Projects_layout } from "../layouts/projects_layout"
@@ -20,13 +19,3 @@ export default function Project() {
     </DefaultLayout>
   );
 }
-export const getServerSideProps = withIronSessionSsr(
-  async function getServerSideProps({ req }) {
-    let data = {};
-    return {
-      props: { data },
-    };
-  },
-
-  ironOptions
-);

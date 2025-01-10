@@ -9,6 +9,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 
 
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
@@ -19,7 +20,7 @@ var xss = require("xss");
 import {
   Facebook,
   GithubIcon,
-  DiscordIcon,
+  LinkedIn,
   HeartFilledIcon,
   Email,
 } from "../icons";
@@ -133,23 +134,19 @@ export const Index_block5 = (props) => {
           <NextLink href={cfg.links.github} aria-label="Github">
             <span className="flex  sm:m-4">
               <GithubIcon />
-              https://github.com/KostuX
+            <div className="ml-2"> KostuX </div>
             </span>
           </NextLink>
-          <NextLink href={cfg.links.github2} aria-label="Github">
-            <span className="flex  sm:m-4">
-              <GithubIcon />
-              https://github.com/Kostas9999
-            </span>
-          </NextLink>
-          {/*}
-          <NextLink href={cfg.links.facebook} aria-label="Facebook">
+         
+          
+          <NextLink href={cfg.links.linkedIn} aria-label="LinkedIn">
             <span className="flex sm:m-4">
-              <Facebook />
-              https://www.facebook.com/KostuX
+              <LinkedIn size={25}/>
+              <div className="ml-2 "> in/konstantinas-avl </div>
+             
             </span>
           </NextLink>
-          {*/}
+          
           <NextLink
             href={
               "mailto:goldiskiker@gmail.com?subject=Your%20Subject&body=Your%20Message"

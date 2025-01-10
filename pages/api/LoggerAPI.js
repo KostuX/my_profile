@@ -1,13 +1,12 @@
-import { withIronSessionApiRoute } from "iron-session/next";
-import { ironOptions } from "../../config/session/session_config";
+
 import userConnected from "../../lib/userConnected";
 
 import log_read from "../../lib/logs/LOG_read";
 import log_write from "../../lib/logs/LOG_write";
 
-export default withIronSessionApiRoute(LoggerAPI, ironOptions);
 
-async function LoggerAPI(req, res) {
+
+ export default async function LoggerAPI(req, res) {
   res.status(200).send(); 
   let data = req.body;
 

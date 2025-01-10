@@ -1,6 +1,4 @@
 import DefaultLayout from "../layouts/default";
-import { withIronSessionSsr } from "iron-session/next";
-import { ironOptions } from "../config/session/session_config";
 import { Index_block1 } from "../components/index/block1";
 import { Index_block2 } from "../components/index/tools";
 import { Index_block3 } from "../components/index/education";
@@ -20,6 +18,7 @@ let content = [
 
 export default function Home({ data }) {
   useEffect(() => {
+    import("@google/model-viewer").catch(console.error);
     // get user IP address
     async function getIP() {
       try {
@@ -54,7 +53,7 @@ export default function Home({ data }) {
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
-    import("@google/model-viewer").catch(console.error);
+    //
     if (document) {
       const modelViewer = document.getElementById("3d_main");
       document.addEventListener("mousemove", (event) => {
@@ -92,12 +91,4 @@ export default function Home({ data }) {
   );
 }
 
-export const getServerSideProps = withIronSessionSsr(
-  async function getServerSideProps(context) {
-    return {
-      props: {},
-    };
-  },
 
-  ironOptions
-);
