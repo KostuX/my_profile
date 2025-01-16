@@ -1,13 +1,13 @@
 import React, { PureComponent, useState } from "react";
 import { Chart } from "./radarChart/radarChart";
 import { progressBar } from "../progressBar";
-import { Parallax,ParallaxProvider } from "react-scroll-parallax";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import { useRef, useEffect } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 import {
   Radar,
@@ -128,7 +128,7 @@ const qq8 = [
   },
 
   {
-    subject: "Computtational Intelligence",
+    subject: "Computer Intelligence",
     A: 75,
   },
 ];
@@ -136,8 +136,8 @@ const qq8 = [
 const charts = [
   {
     title: "Bachelor of Science (Honours) in ",
-    subTitle: "Computing in Information Technology (Level 8)",
-    chart: <Chart data={qq8} className=""/>,
+    subTitle: "Computing in Information Technology (Level 8) with GPA 3.8/4",
+    chart: <Chart data={qq8} className="" />,
     avg: 80,
   },
   {
@@ -159,14 +159,21 @@ export const Index_block3 = (props) => {
   const [paused, setPaused] = useState(false);
   let paused_ = false;
 
-
   const text = useRef(null);
-  useEffect(()=>{    
-    const el = text.current
-    gsap.fromTo(el, {opacity:0},{opacity:1, duration:3, scrollTrigger:{
-        trigger:el
-    }})
-  },[])
+  useEffect(() => {
+    const el = text.current;
+    gsap.fromTo(
+      el,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 3,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, []);
 
   const nextItem = () => {
     setActiveIndex(
@@ -196,50 +203,49 @@ export const Index_block3 = (props) => {
   //<Chart data={qq5} />;
   return (
     <div className="mb-24 sm:mb-56 xl:mb-24 flex justify-center" ref={text}>
-     < ParallaxProvider>
-      <div className=" text-xl  ">
-        
-        <div className="text-xl text-center">
-        <Parallax speed={1}>
-          <h1 className="mb-5 mt-12 sm:mt-24 font-bold">【Education】</h1>
-          </Parallax>
-          <Parallax speed={-1}>
-            <div className="flex justify-center">
+      <ParallaxProvider>
+        <div className=" text-xl  ">
+          <div className="text-xl text-center">
+            <Parallax speed={1}>
+              <h1 className="mb-5 mt-12 sm:mt-24 font-bold">【Education】</h1>
+            </Parallax>
+            <Parallax speed={-1}>
+              <div className="flex justify-center">
+                <h3 className="mb-12 sm:mx-12 max-w-2xl">
+                  Maintained a high GPA throughout my academic career,
+                  demonstrating strong dedication and intellectual capability.
+                  Awarded "Student of the Year" for exemplary performance during
+                  studies. Graduated with First Class Honours in Computing in
+                  Information Technology, recognized for outstanding academic
+                  achievements and commitment to excellence.
+                </h3>
+              </div>
+            </Parallax>
+          </div>
+          <Parallax speed={1}>
+            <div className="h-fit ">
+              <div className="grid justify-center ">
+                <div>
+                  <h1 className="text-center">{charts[activeIndex].title}</h1>
+                  <h2 className="text-center">
+                    {charts[activeIndex].subTitle}
+                  </h2>
+                </div>
+                <div className="mx-12  ">
+                  {progressBar({
+                    value: charts[activeIndex].avg,
+                    title: "Grade Average",
+                  })}
+                </div>
+              </div>
 
-          <h3 className="mb-12 sm:mx-12 max-w-2xl">
-            Maintained a high GPA throughout my academic career, demonstrating
-            strong dedication and intellectual capability. Awarded "Student of
-            the Year" for exemplary performance during studies. Graduated with
-            First Class Honours in Computing in Information Technology, recognized for outstanding academic
-            achievements and commitment to excellence.
-          </h3>
-          </div>
+              <div className="h-[25vh] sm:h-[50vh] mt-10 ">
+                {charts[activeIndex].chart}{" "}
+              </div>
+            </div>
           </Parallax>
         </div>
-        <Parallax speed={1}>
-      <div className="h-fit ">
-        <div className="grid justify-center ">
-          <div>
-          <h1 className="text-center">{charts[activeIndex].title}</h1>
-          <h2 className="text-center">{charts[activeIndex].subTitle}</h2>
-          </div>
-          <div className="mx-12  ">
-          {progressBar({
-            value: charts[activeIndex].avg,
-            title: "Grade Average",
-          })}
-          
-        </div>
-       
-        </div>
-       
-        <div className="h-[25vh] sm:h-[50vh] mt-10 ">{charts[activeIndex].chart} </div>     
-      
-      </div>
-      </Parallax>
-      </div>
-  
-    </ParallaxProvider>
+      </ParallaxProvider>
     </div>
   );
 };
