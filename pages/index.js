@@ -84,7 +84,7 @@ export default function Home({ data }) {
       {content.map((e, i) => (
         <div className="mt-24 mb-24">
           <div key={i}>{e}</div>
-          {(content.length != i+1)&& <Divider/> }          
+          {(content.length != i+1) && <Divider/> }          
         </div>
       ))}
     </DefaultLayout>
