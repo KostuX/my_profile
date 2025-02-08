@@ -130,6 +130,31 @@ export const projects_cfg = [
             into other applications.`,
     },
     {
+        title: "RS Nails",
+        link: "https://www.rsnails.lt",
+        language: "JavaScript",
+        description_short: "Local business website",
+        images: [
+            {
+                src: "./projectImg/rsnails/index.png",
+                description: "Index",
+            },
+            {
+                src: "./projectImg/rsnails/gallery_1.png",
+                description: "3D Gallery",
+            },
+            {
+                src: "./projectImg/rsnails/gallery_2.png",
+                description: "2D Gallery",
+            },
+            {
+                src: "./projectImg/rsnails/contact.png",
+                description: "Contact",
+            },
+        ],
+        description: "",
+    },
+    {
         title: "Fix Tune Motors",
         link: "www.fixtunemotors.ie",
         language: "JavaScript",
