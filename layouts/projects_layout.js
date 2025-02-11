@@ -2,7 +2,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { useEffect, useRef } from "react";
 import EmblaCarousel from "../components/emblaCarousel/Embla";
 import Autoplay from "embla-carousel-autoplay";
-
+import  ContentWrapper  from "./mediaTypeWrapper"
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -70,6 +70,8 @@ export const Projects_layout = (prop) => {
             </div>
             </Parallax>
             </ParallaxProvider>
+
+           
         </div>
     );
 };

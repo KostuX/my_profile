@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { LazyLoadImage } from "./EmblaCarouselLazyLoadImage";
 
+
+
 const EmblaCarousel = (props) => {
   const { slides, options, options2 } = props;
   const [emblaRed, emblaApi] = useEmblaCarousel(options, options2);
@@ -32,13 +34,18 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaRed}>
         <div className="embla__container">
           {slides.map((e, index) => (
+            <>
             <LazyLoadImage
               key={index}
               index={index}
               imgSrc={e.src}
               imgDescription={e.description}
               inView={slidesInView.indexOf(index) > -1}
-            />
+            /> 
+
+     
+
+</>
           ))}
         </div>
       </div>

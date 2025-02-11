@@ -135,7 +135,7 @@ export const projects_cfg = [
         title: "O Rings",
         link: "N/A",
         language: "Python",
-        description_short: "Computer Vision techniques to analyse images. Aim to identife and lable foulty O Rings",
+        description_short: "Computer Vision techniques to analyze images. Aim to identify and label faulty O-rings.",
         images: [ 
              { src: "./projectImg/oring/set_1.png", description: "" },
             { src: "./projectImg/oring/set_2.png", description: "" },
@@ -231,8 +231,8 @@ export const projects_cfg = [
         language: "C, Gnuplot",
         description_short: "COVID-19 Simulation: Evaluating Lockdown Effectiveness",
         images: [
-            { src: "./projectImg/covid/image.png", description: "" },
-            { src: "./projectImg/covid/video_1.webm", description: "" },
+            { src: "./projectImg/covid/spread.png", description: "Cellular Automata" },
+            { src: "./projectImg/covid/lockdown.png", description: "Lockdown Effect On Population" },
         ],
         description: 'A COVID-19 Lockdown Simulation App models the spread of the virus under different lockdown scenarios to evaluate their effectiveness in reducing infections. The app simulates a population where individuals interact and transmit the virus based on parameters like infection rate, recovery time, and mobility restrictions. \can adjust variables such as lockdown start time, intensity (full or partial), and duration to observe their impact on case numbers over time. The simulation visualises outcomes with graphs and heatmaps, helping policymakers and researchers understand the trade-offs between public health and economic impact.'
 
@@ -244,8 +244,8 @@ export const projects_cfg = [
         language: "Python/Jupyter",
         description_short: "",
         images: [
-            { src: "./projectImg/ML_chest/baseline.png", description: "" },
-            { src: "./projectImg/ML_chest/overfiting.png", description: "" },
+            { src: "./projectImg/ML_chest/baseline.png", description: "Baseline" },
+            { src: "./projectImg/ML_chest/overfiting.png", description: "Augmentation to prevent overfiting" },
             { src: "./projectImg/ML_chest/classImbalance.png", description: "" },
             { src: "./projectImg/ML_chest/kerasTuner.png", description: "" },
             { src: "./projectImg/ML_chest/pretrainedModels.png", description: "" },

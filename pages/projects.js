@@ -1,7 +1,7 @@
 import DefaultLayout from "../layouts/default";
 
 import { Project_drone } from "../components/projects/projectDrone";
-import { Project_fixTuneMotors } from "../components/projects/fixtunemotors";
+
 import { Projects_layout } from "../layouts/projects_layout"
 import { projects_cfg } from "../config/cfg_projects"
 import React from "react";

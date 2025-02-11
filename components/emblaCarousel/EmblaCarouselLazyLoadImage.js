@@ -18,6 +18,7 @@ export const LazyLoadImage = (props) => {
         )}
       >
         {!hasLoaded && <span className="embla__lazy-load__spinner" />}
+  
         <img
           className="embla__slide__img embla__lazy-load__img"
           onLoad={setLoaded}
@@ -25,6 +26,8 @@ export const LazyLoadImage = (props) => {
           alt=""
           data-src={imgSrc}
         />
+      
+        
         <div>{imgDescription}</div>
       </div>
     </div>
