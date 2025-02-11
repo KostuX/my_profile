@@ -50,6 +50,15 @@ export const Projects_layout = (prop) => {
             </div>
             </Parallax>
             <Parallax speed={1}>
+
+            <div className="flex justify-center">
+                <div className="mx-4 mt-6 text-lg max-w-4xl text-center">
+                    {project.description}
+                </div>
+            </div>
+           
+            </Parallax>
+            <Parallax speed={-1}>
             <div className="mt-12 flex justify-center">
                 <div className="max-w-4xl w-5/6">
                     <EmblaCarousel
@@ -57,13 +66,6 @@ export const Projects_layout = (prop) => {
                         options={OPTIONS}
                         options2={OPTIONS2}
                     />
-                </div>
-            </div>
-            </Parallax>
-            <Parallax speed={-1}>
-            <div className="flex justify-center">
-                <div className="mx-4 mt-6 text-lg max-w-4xl text-center">
-                    {project.description}
                 </div>
             </div>
             </Parallax>

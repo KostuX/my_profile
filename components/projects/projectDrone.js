@@ -43,7 +43,6 @@ export const Project_drone = (props) => {
 
 
 
-
     
        
 
@@ -52,3 +51,7 @@ export const Project_drone = (props) => {
     </>
   );
 };
+/*
+
+A Web-Based Game Built with Unity features an interactive experience where players control a drone to complete various challenges. Designed for seamless browser-based gameplay, the game utilizes WebGL to deliver high-quality 3D graphics and smooth performance without requiring downloads. Players navigate the drone through different environments, performing tasks such as obstacle avoidance, object collection, and precision landing.
+*/

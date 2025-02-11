@@ -1,6 +1,8 @@
 
 
 export const projects_cfg = [
+
+
     {
         title: "IPFS Life",
         link: "https://ip-fs.life",
@@ -39,12 +41,12 @@ export const projects_cfg = [
         ],
         description: `User-friendly Gateway to the IPFS Network. My project acts as a
             bridge from Web 2.0 to Web 3.0, simplifying the complexities of
-            decentralized networks. It offers a service similar to centralized
+            decentralised networks. It offers a service similar to centralised
             systems, making it more familiar to users. The IPFS gateway allows
             users to transfer larger files compared to common solutions like
             messengers or emails and reduces the complexity of sharing over
             cloud storage. For private sharing, file encryption can restrict
-            unauthorized viewing since IPFS is a public network. Ip-fs.cloud is
+            unauthorised viewing since IPFS is a public network. Ip-fs.cloud is
             probably the fastest way to share files between multiple people
             simultaneously. Users only need to add a file reference to a "Public
             Wall" for public access. The gateway also supports video streaming
@@ -52,9 +54,9 @@ export const projects_cfg = [
             their phones and play them almost immediately on any HTML5-capable
             web browser. Apart from simplifying the adoption of distributed
             networks, this represents a significant technological shift since
-            Web 2.0. Decentralized systems are more efficient, reduce business
+            Web 2.0. Decentralised systems are more efficient, reduce business
             expenses, and waste less energy due to direct peer-to-peer data
-            transfer, benefiting our ecosystem. IPFS, as a decentralized network
+            transfer, benefiting our ecosystem. IPFS, as a decentralised network
             with a distributed file system, avoids central choke points. Any
             node with the content cached can serve it, enabling torrent-like
             file sharing where peers download files from multiple sources
@@ -129,6 +131,7 @@ export const projects_cfg = [
             API endpoint will also be provided, so it can be easily integrated
             into other applications.`,
     },
+   
     {
         title: "RS Nails",
         link: "https://www.rsnails.lt",
@@ -152,7 +155,7 @@ export const projects_cfg = [
                 description: "Contact",
             },
         ],
-        description: "",
+        description: "A Business Website for Nail Polishing Services showcases a professional nail care brand. Designed with a stylish and modern aesthetic, the website features high-quality images, a portfolio of nail art designs, and customer testimonials to enhance credibility.",
     },
     {
         title: "Fix Tune Motors",
@@ -194,7 +197,7 @@ export const projects_cfg = [
             {
                 src: "./projectImg/huffman/DefaultTree.png",
                 description:
-                    "A Huffman tree that has been constructed using the default dataset utilized in this application.",
+                    "A Huffman tree that has been constructed using the default dataset utilised in this application.",
             },
         ],
         description: `Huffman coding is a scheme that assigns variable-length bit-codes
@@ -208,7 +211,97 @@ export const projects_cfg = [
           determined and then used to encode a message. The tree is also used
           to decode an encoded message as it provides a way to determine which
           bit sequences translate back to a character.`,
-    }
+    },
+ 
+    {
+        title: "AI/ML Tumor (data analytics)",
+        link: "Not Public",
+        language: "Python/Jupyter",
+        description_short: "",
+        images: [
+            { src: "./projectImg/ML_tumor/age.png", description: "" }, 
+            { src: "./projectImg/ML_tumor/corelation.png", description: "" }, 
+            { src: "./projectImg/ML_tumor/corelation2.png", description: "" }, 
+            { src: "./projectImg/ML_tumor/outliers.png", description: "" },
+            { src: "./projectImg/ML_tumor/evaluation.png", description: "" },],
+        description: ''
+
+    },
+    {
+        title: "AI/ML Fake News (data analytics)",
+        link: "N/A",
+        language: "Python/Jupyter",
+        description_short: "Analyse given textual content to detect fake news/post.",
+        images: [
+            { src: "./projectImg/ML_fakeNews/image.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/dataRepresentation.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/clustering.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/wordCloud.png", description: "" },           
+            { src: "./projectImg/ML_fakeNews/compareMostCommon.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/gramAnalysis.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/generalisation.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/modelScore.png", description: "" },
+        ],
+        description: ''
+
+    },
+    {
+        title: "AI/ML Chest",
+        link: "N/A",
+        language: "Python/Jupyter",
+        description_short: "",
+        images: [
+            { src: "./projectImg/ML_chest/baseline.png", description: "" },
+            { src: "./projectImg/ML_chest/overfiting.png", description: "" },
+            { src: "./projectImg/ML_chest/classImbalance.png", description: "" },
+            { src: "./projectImg/ML_chest/kerasTuner.png", description: "" },
+            { src: "./projectImg/ML_chest/pretrainedModels.png", description: "" },
+            { src: "./projectImg/ML_chest/modelEvaluation.png", description: "" },
+        ],
+        description: 'A Machine Learning System for Chest Infection Analysis and Classification leverages advanced algorithms to detect and categorise chest infections from medical images such as X-rays or CT scans. The system processes input images using techniques like image preprocessing, noise reduction, and feature extraction to enhance diagnostic accuracy. A deep learning model, such as a Convolutional Neural Network (CNN), analyses the images to identify patterns associated with infections like pneumonia, tuberculosis, or COVID-19. The model is trained on labeled medical datasets, learning to differentiate between normal and infected lungs. Statistical measures, including accuracy, sensitivity, and specificity, help evaluate its performance. After analysis, the system classifies the infection and provides a confidence score, assisting healthcare professionals in diagnosis. The model can be integrated into a cloud-based platform for remote accessibility or deployed in hospitals to support radiologists in making faster, data-driven decisions.'
+
+    },
+
+    {
+        title: "COVID-19 Simulator",
+        link: "N/A",
+        language: "C, Gnuplot",
+        description_short: "COVID-19 Simulation: Evaluating Lockdown Effectiveness",
+        images: [{ src: "./projectImg/covid/image.png", description: "" },{ src: "./projectImg/covid/video_1.webm", description: "" },],
+        description: 'A COVID-19 Lockdown Simulation App models the spread of the virus under different lockdown scenarios to evaluate their effectiveness in reducing infections. The app simulates a population where individuals interact and transmit the virus based on parameters like infection rate, recovery time, and mobility restrictions. \can adjust variables such as lockdown start time, intensity (full or partial), and duration to observe their impact on case numbers over time. The simulation visualises outcomes with graphs and heatmaps, helping policymakers and researchers understand the trade-offs between public health and economic impact.'
+
+    },
+    {
+        title: "O Rings",
+        link: "N/A",
+        language: "Python",
+        description_short: "Computer Vision techniques to analyse images. Aim to identife and lable foulty O Rings",
+        images: [],
+        description: 'A Computer Vision Application for O-Ring Analysis inspects and classifies O-rings based on their condition using image processing techniques. The process begins with thresholding, which converts the image to a binary format to separate the O-ring from the background. To enhance the shape and remove noise, dilation and erosion are applied, ensuring a clearer representation of the object. The system then extracts regions of interest, isolating the O-ring for further analysis. Perimeter detection is used to examine the contour, identifying irregularities, breaks, or distortions. Statistical analysis follows, measuring key properties such as circularity, thickness variation, and surface defects. Based on these extracted features, the application classifies the O-ring into categories such as good, damaged, or ripped, using predefined thresholds. This automated approach improves quality control in manufacturing by providing fast, accurate, and consistent defect detection.'
+
+    },
+    {
+        title: "RSS reader (to be added)",
+        link: "N/A",
+        language: "Java (Android)",
+        description_short: "RSS reader for mobile device.",
+        images: [{ src: "", description: "" },],
+        description: 'An RSS Reader App for Android allows users to subscribe to and read RSS feeds, providing a streamlined way to stay updated with news and articles. The app fetches and parses RSS feeds from user-specified sources, displaying content in a clean and user-friendly interface. Users can categorise feeds, bookmark articles, and search through saved content for easy access. To ensure seamless data synchronisation across devices, the app stores user preferences, subscriptions, and bookmarked articles on Firebase. Firebase Firestore manages real-time data storage, while Firebase Authentication allows secure user login. The app periodically updates feeds in the background and supports offline reading by caching recent articles. With push notifications for new articles, customisable themes, and an intuitive design, the app enhances the RSS reading experience while leveraging Firebase for efficient cloud-based storage and synchronisation.'
+
+    },
+    {
+        title: "NLP",
+        link: "N/A",
+        language: "Javasript",
+        description_short: "Parse text to tree",
+        images: [
+            { src: "./projectImg/NLP/image.png", description: "" },
+            { src: "./projectImg/NLP/image_1.png", description: "" },
+            { src: "./projectImg/NLP/image_2.png", description: "" },
+        ],
+        description: ''
+
+    },
 ]
 
 
