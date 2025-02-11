@@ -131,6 +131,49 @@ export const projects_cfg = [
             API endpoint will also be provided, so it can be easily integrated
             into other applications.`,
     },
+    {
+        title: "O Rings",
+        link: "N/A",
+        language: "Python",
+        description_short: "Computer Vision techniques to analyse images. Aim to identife and lable foulty O Rings",
+        images: [ 
+             { src: "./projectImg/oring/set_1.png", description: "" },
+            { src: "./projectImg/oring/set_2.png", description: "" },
+            { src: "./projectImg/oring/set_3.png", description: "" },
+            { src: "./projectImg/oring/set_4.png", description: "" },],
+        description: 'A Computer Vision Application for O-Ring Analysis inspects and classifies O-rings based on their condition using image processing techniques. The process begins with thresholding, which converts the image to a binary format to separate the O-ring from the background. To enhance the shape and remove noise, dilation and erosion are applied, ensuring a clearer representation of the object. The system then extracts regions of interest, isolating the O-ring for further analysis. Perimeter detection is used to examine the contour, identifying irregularities, breaks, or distortions. Statistical analysis follows, measuring key properties such as circularity, thickness variation, and surface defects. Based on these extracted features, the application classifies the O-ring into categories such as good, damaged, or ripped, using predefined thresholds. This automated approach improves quality control in manufacturing by providing fast, accurate, and consistent defect detection.'
+
+    },
+    {
+        title: "Huffman Tree",
+        link: "https://github.com/KostuX/huffman.git",
+        language: "Java",
+        description_short: "Text encoder/decoder which allows to compress text",
+        images: [
+            { src: "./projectImg/huffman/app.png", description: "" },
+            {
+                src: "./projectImg/huffman/Huffman_tree.png",
+                description:
+                    "Huffman tree  -  example from https://en.wikipedia.org/wiki/Huffman_coding",
+            },
+            {
+                src: "./projectImg/huffman/DefaultTree.png",
+                description:
+                    "A Huffman tree that has been constructed using the default dataset utilised in this application.",
+            },
+        ],
+        description: `Huffman coding is a scheme that assigns variable-length bit-codes
+          (binary strings) to characters, such that the lengths of the codes
+          depend on the frequencies of the characters in a typical message. As
+          a result, encoded messages take less space (as compared to
+          fixed-length encoding such as ASCII or UNICODE) since the letters
+          that appear more frequently are assigned shorter codes. This is
+          performed by first building a Huffman coding Tree based on a given
+          set of frequencies. From the tree, bit-codes for each character are
+          determined and then used to encode a message. The tree is also used
+          to decode an encoded message as it provides a way to determine which
+          bit sequences translate back to a character.`,
+    },
    
     {
         title: "RS Nails",
@@ -183,35 +226,35 @@ export const projects_cfg = [
         description: "",
     },
     {
-        title: "Huffman Tree",
-        link: "https://github.com/KostuX/huffman.git",
-        language: "Java",
-        description_short: "Text encoder/decoder which allows to compress text",
+        title: "COVID-19 Simulator",
+        link: "N/A",
+        language: "C, Gnuplot",
+        description_short: "COVID-19 Simulation: Evaluating Lockdown Effectiveness",
         images: [
-            { src: "./projectImg/huffman/app.png", description: "" },
-            {
-                src: "./projectImg/huffman/Huffman_tree.png",
-                description:
-                    "Huffman tree  -  example from https://en.wikipedia.org/wiki/Huffman_coding",
-            },
-            {
-                src: "./projectImg/huffman/DefaultTree.png",
-                description:
-                    "A Huffman tree that has been constructed using the default dataset utilised in this application.",
-            },
+            { src: "./projectImg/covid/image.png", description: "" },
+            { src: "./projectImg/covid/video_1.webm", description: "" },
         ],
-        description: `Huffman coding is a scheme that assigns variable-length bit-codes
-          (binary strings) to characters, such that the lengths of the codes
-          depend on the frequencies of the characters in a typical message. As
-          a result, encoded messages take less space (as compared to
-          fixed-length encoding such as ASCII or UNICODE) since the letters
-          that appear more frequently are assigned shorter codes. This is
-          performed by first building a Huffman coding Tree based on a given
-          set of frequencies. From the tree, bit-codes for each character are
-          determined and then used to encode a message. The tree is also used
-          to decode an encoded message as it provides a way to determine which
-          bit sequences translate back to a character.`,
+        description: 'A COVID-19 Lockdown Simulation App models the spread of the virus under different lockdown scenarios to evaluate their effectiveness in reducing infections. The app simulates a population where individuals interact and transmit the virus based on parameters like infection rate, recovery time, and mobility restrictions. \can adjust variables such as lockdown start time, intensity (full or partial), and duration to observe their impact on case numbers over time. The simulation visualises outcomes with graphs and heatmaps, helping policymakers and researchers understand the trade-offs between public health and economic impact.'
+
     },
+  
+    {
+        title: "AI/ML Chest Infection",
+        link: "N/A",
+        language: "Python/Jupyter",
+        description_short: "",
+        images: [
+            { src: "./projectImg/ML_chest/baseline.png", description: "" },
+            { src: "./projectImg/ML_chest/overfiting.png", description: "" },
+            { src: "./projectImg/ML_chest/classImbalance.png", description: "" },
+            { src: "./projectImg/ML_chest/kerasTuner.png", description: "" },
+            { src: "./projectImg/ML_chest/pretrainedModels.png", description: "" },
+            { src: "./projectImg/ML_chest/modelEvaluation.png", description: "" },
+        ],
+        description: 'A Machine Learning System for Chest Infection Analysis and Classification leverages advanced algorithms to detect and categorise chest infections from medical images such as X-rays or CT scans. The system processes input images using techniques like image preprocessing, noise reduction, and feature extraction to enhance diagnostic accuracy. A deep learning model, such as a Convolutional Neural Network (CNN), analyses the images to identify patterns associated with infections like pneumonia, tuberculosis, or COVID-19. The model is trained on labeled medical datasets, learning to differentiate between normal and infected lungs. Statistical measures, including accuracy, sensitivity, and specificity, help evaluate its performance. After analysis, the system classifies the infection and provides a confidence score, assisting healthcare professionals in diagnosis. The model can be integrated into a cloud-based platform for remote accessibility or deployed in hospitals to support radiologists in making faster, data-driven decisions.'
+
+    },
+  
  
     {
         title: "AI/ML Tumor (data analytics)",
@@ -245,47 +288,18 @@ export const projects_cfg = [
         description: ''
 
     },
-    {
-        title: "AI/ML Chest",
-        link: "N/A",
-        language: "Python/Jupyter",
-        description_short: "",
-        images: [
-            { src: "./projectImg/ML_chest/baseline.png", description: "" },
-            { src: "./projectImg/ML_chest/overfiting.png", description: "" },
-            { src: "./projectImg/ML_chest/classImbalance.png", description: "" },
-            { src: "./projectImg/ML_chest/kerasTuner.png", description: "" },
-            { src: "./projectImg/ML_chest/pretrainedModels.png", description: "" },
-            { src: "./projectImg/ML_chest/modelEvaluation.png", description: "" },
-        ],
-        description: 'A Machine Learning System for Chest Infection Analysis and Classification leverages advanced algorithms to detect and categorise chest infections from medical images such as X-rays or CT scans. The system processes input images using techniques like image preprocessing, noise reduction, and feature extraction to enhance diagnostic accuracy. A deep learning model, such as a Convolutional Neural Network (CNN), analyses the images to identify patterns associated with infections like pneumonia, tuberculosis, or COVID-19. The model is trained on labeled medical datasets, learning to differentiate between normal and infected lungs. Statistical measures, including accuracy, sensitivity, and specificity, help evaluate its performance. After analysis, the system classifies the infection and provides a confidence score, assisting healthcare professionals in diagnosis. The model can be integrated into a cloud-based platform for remote accessibility or deployed in hospitals to support radiologists in making faster, data-driven decisions.'
 
-    },
 
-    {
-        title: "COVID-19 Simulator",
-        link: "N/A",
-        language: "C, Gnuplot",
-        description_short: "COVID-19 Simulation: Evaluating Lockdown Effectiveness",
-        images: [{ src: "./projectImg/covid/image.png", description: "" },{ src: "./projectImg/covid/video_1.webm", description: "" },],
-        description: 'A COVID-19 Lockdown Simulation App models the spread of the virus under different lockdown scenarios to evaluate their effectiveness in reducing infections. The app simulates a population where individuals interact and transmit the virus based on parameters like infection rate, recovery time, and mobility restrictions. \can adjust variables such as lockdown start time, intensity (full or partial), and duration to observe their impact on case numbers over time. The simulation visualises outcomes with graphs and heatmaps, helping policymakers and researchers understand the trade-offs between public health and economic impact.'
 
-    },
-    {
-        title: "O Rings",
-        link: "N/A",
-        language: "Python",
-        description_short: "Computer Vision techniques to analyse images. Aim to identife and lable foulty O Rings",
-        images: [],
-        description: 'A Computer Vision Application for O-Ring Analysis inspects and classifies O-rings based on their condition using image processing techniques. The process begins with thresholding, which converts the image to a binary format to separate the O-ring from the background. To enhance the shape and remove noise, dilation and erosion are applied, ensuring a clearer representation of the object. The system then extracts regions of interest, isolating the O-ring for further analysis. Perimeter detection is used to examine the contour, identifying irregularities, breaks, or distortions. Statistical analysis follows, measuring key properties such as circularity, thickness variation, and surface defects. Based on these extracted features, the application classifies the O-ring into categories such as good, damaged, or ripped, using predefined thresholds. This automated approach improves quality control in manufacturing by providing fast, accurate, and consistent defect detection.'
-
-    },
+   
     {
         title: "RSS reader (to be added)",
         link: "N/A",
         language: "Java (Android)",
         description_short: "RSS reader for mobile device.",
-        images: [{ src: "", description: "" },],
+        images: [
+          
+        ],
         description: 'An RSS Reader App for Android allows users to subscribe to and read RSS feeds, providing a streamlined way to stay updated with news and articles. The app fetches and parses RSS feeds from user-specified sources, displaying content in a clean and user-friendly interface. Users can categorise feeds, bookmark articles, and search through saved content for easy access. To ensure seamless data synchronisation across devices, the app stores user preferences, subscriptions, and bookmarked articles on Firebase. Firebase Firestore manages real-time data storage, while Firebase Authentication allows secure user login. The app periodically updates feeds in the background and supports offline reading by caching recent articles. With push notifications for new articles, customisable themes, and an intuitive design, the app enhances the RSS reading experience while leveraging Firebase for efficient cloud-based storage and synchronisation.'
 
     },
