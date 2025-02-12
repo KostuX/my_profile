@@ -4,7 +4,7 @@ export const projects_cfg = [
 
 
     {
-        title: "IPFS Life",
+        title: "IPFS Life (Web App)",
         link: "https://ip-fs.life",
         language: "JavaScript",
         description_short: "Web-based gateway to distributed (IPFS) network",
@@ -63,7 +63,7 @@ export const projects_cfg = [
             concurrently, speeding up the process.`,
     },
     {
-        title: "MonTool",
+        title: "MonTool (Web App)",
         link: "https://montool.vercel.app/",
         language: "Javascipt",
         description_short: "Network monitoring tool (small to medium infrastructure)",
@@ -132,10 +132,10 @@ export const projects_cfg = [
             into other applications.`,
     },
     {
-        title: "O Rings",
-        link: "N/A",
+        title: "O Rings (Computer Vision)",
+        link: "Private",
         language: "Python",
-        description_short: "Computer Vision techniques to analyze images. Aim to identify and label faulty O-rings.",
+        description_short: "Computer Vision techniques to analyse images. Aim to identify and label faulty O-rings.",
         images: [ 
              { src: "./projectImg/oring/set_1.png", description: "" },
             { src: "./projectImg/oring/set_2.png", description: "" },
@@ -145,7 +145,7 @@ export const projects_cfg = [
 
     },
     {
-        title: "Huffman Tree",
+        title: "Huffman Tree (Algorithm)",
         link: "https://github.com/KostuX/huffman.git",
         language: "Java",
         description_short: "Text encoder/decoder which allows to compress text",
@@ -176,7 +176,7 @@ export const projects_cfg = [
     },
    
     {
-        title: "RS Nails",
+        title: "RS Nails (Website)",
         link: "https://www.rsnails.lt",
         language: "JavaScript",
         description_short: "Local business website",
@@ -201,7 +201,7 @@ export const projects_cfg = [
         description: "A Business Website for Nail Polishing Services showcases a professional nail care brand. Designed with a stylish and modern aesthetic, the website features high-quality images, a portfolio of nail art designs, and customer testimonials to enhance credibility.",
     },
     {
-        title: "Fix Tune Motors",
+        title: "Fix Tune Motors (Website)",
         link: "www.fixtunemotors.ie",
         language: "JavaScript",
         description_short: "Local business website",
@@ -226,8 +226,8 @@ export const projects_cfg = [
         description: "",
     },
     {
-        title: "COVID-19 Simulator",
-        link: "N/A",
+        title: "COVID-19 Simulator (Application)",
+        link: "Private",
         language: "C, Gnuplot",
         description_short: "COVID-19 Simulation: Evaluating Lockdown Effectiveness",
         images: [
@@ -239,17 +239,17 @@ export const projects_cfg = [
     },
   
     {
-        title: "AI/ML Chest Infection",
-        link: "N/A",
+        title: "Chest Infection (AI/ML, Data analytics)",
+        link: "Private",
         language: "Python/Jupyter",
         description_short: "",
         images: [
             { src: "./projectImg/ML_chest/baseline.png", description: "Baseline" },
-            { src: "./projectImg/ML_chest/overfiting.png", description: "Augmentation to prevent overfiting" },
-            { src: "./projectImg/ML_chest/classImbalance.png", description: "" },
-            { src: "./projectImg/ML_chest/kerasTuner.png", description: "" },
-            { src: "./projectImg/ML_chest/pretrainedModels.png", description: "" },
-            { src: "./projectImg/ML_chest/modelEvaluation.png", description: "" },
+            { src: "./projectImg/ML_chest/augmentation.png", description: "Augmentation to prevent overfiting" },
+            { src: "./projectImg/ML_chest/classImbalance.png", description: "Address class imbalance by applying weights." },
+            { src: "./projectImg/ML_chest/kerasTuner.png", description: "Keras tuner" },
+            { src: "./projectImg/ML_chest/pretrainedModels.png", description: "Test pretrained models" },
+            { src: "./projectImg/ML_chest/modelEvaluation.png", description: "Evaluate" },
         ],
         description: 'A Machine Learning System for Chest Infection Analysis and Classification leverages advanced algorithms to detect and categorise chest infections from medical images such as X-rays or CT scans. The system processes input images using techniques like image preprocessing, noise reduction, and feature extraction to enhance diagnostic accuracy. A deep learning model, such as a Convolutional Neural Network (CNN), analyses the images to identify patterns associated with infections like pneumonia, tuberculosis, or COVID-19. The model is trained on labeled medical datasets, learning to differentiate between normal and infected lungs. Statistical measures, including accuracy, sensitivity, and specificity, help evaluate its performance. After analysis, the system classifies the infection and provides a confidence score, assisting healthcare professionals in diagnosis. The model can be integrated into a cloud-based platform for remote accessibility or deployed in hospitals to support radiologists in making faster, data-driven decisions.'
 
@@ -257,35 +257,35 @@ export const projects_cfg = [
   
  
     {
-        title: "AI/ML Tumor (data analytics)",
-        link: "Not Public",
+        title: "Tumor - cancer detection (AI/ML, Data analytics)",
+        link: "Private",
         language: "Python/Jupyter",
         description_short: "",
         images: [
-            { src: "./projectImg/ML_tumor/age.png", description: "" }, 
-            { src: "./projectImg/ML_tumor/corelation.png", description: "" }, 
-            { src: "./projectImg/ML_tumor/corelation2.png", description: "" }, 
-            { src: "./projectImg/ML_tumor/outliers.png", description: "" },
-            { src: "./projectImg/ML_tumor/evaluation.png", description: "" },],
-        description: ''
+            { src: "./projectImg/ML_tumor/age.png", description: "Protein binding by age" }, 
+            { src: "./projectImg/ML_tumor/corelation2.png", description: "Correlation" }, 
+            { src: "./projectImg/ML_tumor/corelation.png", description: "Correlation Visualisation" },             
+            { src: "./projectImg/ML_tumor/outliers.png", description: "Outliers" },
+            { src: "./projectImg/ML_tumor/evaluation.png", description: "Evaluation" },],
+        description: 'Tumor is an advanced mobile application designed to assist in the early detection of cancer through blood analysis, powered by AI and machine learning technologies. By analysing blood samples, the app utilises sophisticated algorithms to identify biomarkers and other indicators that may suggest the presence of cancerous cells. The machine learning models continuously improve their detection capabilities, providing highly accurate insights that can help healthcare professionals make informed decisions for early diagnosis and treatment. '
 
     },
     {
-        title: "AI/ML Fake News (data analytics)",
-        link: "N/A",
+        title: "Fake News (AI/ML, Data analytics)",
+        link: "Private",
         language: "Python/Jupyter",
         description_short: "Analyse given textual content to detect fake news/post.",
         images: [
             { src: "./projectImg/ML_fakeNews/image.png", description: "" },
             { src: "./projectImg/ML_fakeNews/dataRepresentation.png", description: "" },
-            { src: "./projectImg/ML_fakeNews/clustering.png", description: "" },
-            { src: "./projectImg/ML_fakeNews/wordCloud.png", description: "" },           
-            { src: "./projectImg/ML_fakeNews/compareMostCommon.png", description: "" },
-            { src: "./projectImg/ML_fakeNews/gramAnalysis.png", description: "" },
-            { src: "./projectImg/ML_fakeNews/generalisation.png", description: "" },
-            { src: "./projectImg/ML_fakeNews/modelScore.png", description: "" },
+            { src: "./projectImg/ML_fakeNews/clustering.png", description: "KKMean, KKMean++ clustering" },
+            { src: "./projectImg/ML_fakeNews/wordCloud.png", description: "Wordcloud" },           
+            { src: "./projectImg/ML_fakeNews/compareMostCommon.png", description: "Most Common words" },
+            { src: "./projectImg/ML_fakeNews/gramAnalysis.png", description: "Lexical analysis" },
+            { src: "./projectImg/ML_fakeNews/generalisation.png", description: "Generalisation" },
+            { src: "./projectImg/ML_fakeNews/score.png", description: "Evaluation" },
         ],
-        description: ''
+        description: 'Project leverages advanced artificial intelligence (AI) and machine learning (ML) technologies which may help to combat the spread of misinformation. Using sophisticated algorithms, the system analyses given textual content such as news articles, social media posts, and other content to assess their credibility. By evaluating linguistic patterns and context, it accurately flags potential fake news, helping users distinguish reliable information from misleading or fabricated stories.'
 
     },
 
@@ -293,8 +293,8 @@ export const projects_cfg = [
 
    
     {
-        title: "RSS reader (to be added)",
-        link: "N/A",
+        title: "RSS reader (Android App)",
+        link: "Private",
         language: "Java (Android)",
         description_short: "RSS reader for mobile device.",
         images: [
@@ -304,8 +304,8 @@ export const projects_cfg = [
 
     },
     {
-        title: "NLP",
-        link: "N/A",
+        title: "NLP (Web App)",
+        link: "Private",
         language: "Javasript",
         description_short: "Parse text to tree",
         images: [
